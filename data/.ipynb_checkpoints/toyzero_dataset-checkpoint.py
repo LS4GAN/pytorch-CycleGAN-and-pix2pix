@@ -49,7 +49,7 @@ class ToyzeroDataset(BaseDataset):
 		image_A = self.__load(path_A)
 		image_B = self.__load(path_B)
 		
-		return {'A': image_A, 'B': image_B, 'A_paths': str(path_A), 'B_paths': str(path_B)}
+		return {'A': image_A, 'B': image_B, 'A_paths': path_A, 'B_paths': path_B}
 
 # class toyzero_dataset_options:
 # 	"""

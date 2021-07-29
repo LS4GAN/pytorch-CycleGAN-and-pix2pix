@@ -1,0 +1,1 @@
+srun --unbuffered python train.py --dataroot ~/PROJs/GAN/datasets/ls4gan/toyzero_cropped/toyzero_2021-06-29_safi_U --name toyzero --dataset_mode toyzero --input_nc 1 --output_nc 1 --model cycle_gan --max_dataset_size 1000 --batch_size 32
