@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --partition=volta
+#SBATCH --account mlg-core
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --gres=gpu:1
+#SBATCH --time=35:00:00
+#SBATCH --job-name=
+#SBATCH --output=.out
+#SBATCH --error=.err
+srun --unbuffered python /sdcc/u/yhuang2/PROJs/GAN/pytorch-CycleGAN-and-pix2pix/train_toyzero.py 

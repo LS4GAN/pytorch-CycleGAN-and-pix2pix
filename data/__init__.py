@@ -71,6 +71,7 @@ class CustomDatasetDataLoader():
         self.opt = opt
         dataset_class = find_dataset_using_name(opt.dataset_mode)
         self.dataset = dataset_class(opt)
+        # print(f'dataset has {len(self.dataset)} samples')
         print("dataset [%s] was created" % type(self.dataset).__name__)
         self.dataloader = torch.utils.data.DataLoader(
             self.dataset,
@@ -87,6 +88,7 @@ class CustomDatasetDataLoader():
 
     def __iter__(self):
         """Return a batch of data"""
+        # print(f'size of dataloader = {len(self.dataloader)}')
         for i, data in enumerate(self.dataloader):
             if i * self.opt.batch_size >= self.opt.max_dataset_size:
                 break

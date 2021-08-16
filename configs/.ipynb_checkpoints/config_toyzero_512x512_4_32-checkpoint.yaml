@@ -1,0 +1,8 @@
+checkpoints_dir: /hpcgpfs01/scratch/yhuang2/merged/checkpoints
+dataroot: /sdcc/u/yhuang2/PROJs/GAN/datasets/ls4gan/toyzero_cropped/stable_toyzero_1001_500-512x512_U
+name: toyzero_512x512_4_32
+batch_size: 4
+ngf: 32
+ndf: 32
+n_epochs: 100
+save_epoch_freq: 20

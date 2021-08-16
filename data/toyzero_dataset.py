@@ -12,7 +12,7 @@ def load_image_fnames(dirname, max_dataset_size=float('inf')):
 	return a random subset of max_dataset_size image fnames.
 	"""
 	assert Path(dirname).exists(), f"{dirname} doesn't exist"
-	image_fnames = np.array(list(Path(dirname).glob('*npz')))
+	image_fnames = np.array(sorted(list(Path(dirname).glob('*npz'))))
 	
 	if max_dataset_size != float('inf') and max_dataset_size < len(image_fnames):
 		indices = np.arange(len(image_fnames))
@@ -43,7 +43,10 @@ class ToyzeroDataset(BaseDataset):
 	
 	def __getitem__(self, index):
 		index_A = index % self.size_A
-		index_B = np.random.randint(0, self.size_B - 1) # inclusive end
+		if self.opt.serial_batches:
+			index_B = index % self.size_B
+		else:
+			index_B = np.random.randint(0, self.size_B - 1) # inclusive end
 		path_A = self.image_fnames_A[index_A]
 		path_B = self.image_fnames_B[index_B]
 		image_A = self.__load(path_A)

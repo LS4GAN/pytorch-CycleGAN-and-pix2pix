@@ -1,0 +1,3284 @@
+self.gpu_ids=[0]
+self.checkpoints_dir=/hpcgpfs01/scratch/yhuang2/merged/checkpoints
+self.model=cycle_gan
+self.input_nc=1
+self.output_nc=1
+self.ngf=64
+self.ndf=64
+self.netD=basic
+self.netG=resnet_9blocks
+self.n_layers_D=3
+self.norm=instance
+self.init_type=normal
+self.init_gain=0.02
+self.no_dropout=True
+self.dataset_mode=toyzero
+self.direction=AtoB
+self.serial_batches=False
+self.num_threads=1
+self.batch_size=32
+self.load_size=286
+self.crop_size=256
+self.max_dataset_size=1000
+self.preprocess=resize_and_crop
+self.no_flip=False
+self.display_winsize=256
+self.epoch=latest
+self.load_iter=0
+self.verbose=False
+self.suffix=
+self.display_freq=400
+self.display_ncols=4
+self.display_id=1
+self.display_server=http://localhost
+self.display_env=main
+self.display_port=8097
+self.update_html_freq=1000
+self.print_freq=100
+self.no_html=False
+self.save_latest_freq=5000
+self.save_epoch_freq=20
+self.save_by_iter=False
+self.continue_train=False
+self.epoch_count=1
+self.phase=train
+self.n_epochs=100
+self.n_epochs_decay=100
+self.beta1=0.5
+self.lr=0.0002
+self.gan_mode=lsgan
+self.pool_size=50
+self.lr_policy=linear
+self.lr_decay_iters=50
+self.lambda_A=10.0
+self.lambda_B=10.0
+self.lambda_identity=0.5
+self.isTrain=True
+self.dataroot=/sdcc/u/yhuang2/PROJs/GAN/datasets/ls4gan/toyzero_cropped/toyzero_1001_300-128x128_U/
+self.name=toyzero_128x128_32_64
+pt_folder = /hpcgpfs01/scratch/yhuang2/merged/checkpoints/toyzero_128x128_32_64
+dataset [ToyzeroDataset] was created
+The number of training images = 1000
+dataset [ToyzeroAlignedDataset] was created
+The number of validation images = 100
+initialize network with normal
+initialize network with normal
+initialize network with normal
+initialize network with normal
+model [CycleGANModel] was created
+---------- Networks initialized -------------
+[Network G_A] Total number of parameters : 11.366 M
+[Network G_B] Total number of parameters : 11.366 M
+[Network D_A] Total number of parameters : 2.763 M
+[Network D_B] Total number of parameters : 2.763 M
+-----------------------------------------------
+[1m
+Start of epoch 1 / 200[0m
+	Discriminator loss:	D_A=0.327886, 	D_B=0.526279
+	Generator loss:		G_A=0.384494, 	G_A=0.572842
+	Cycle loss:		C_A=10.450343, 	C_B=6.755534
+	Identity loss:		I_A=3.263479, 	I_B=5.178826
+	Time Taken:		30 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.942878, 	B=1.018166[0m
+[96m	Cycle:		A=0.946006, 	B=1.026461[0m
+[96m	Identity:	A=0.937827, 	B=1.012792
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 2 / 200[0m
+	Discriminator loss:	D_A=0.273867, 	D_B=0.581189
+	Generator loss:		G_A=0.314253, 	G_A=0.651708
+	Cycle loss:		C_A=6.218352, 	C_B=4.968997
+	Identity loss:		I_A=2.331110, 	I_B=3.031674
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.738568, 	B=0.807904[0m
+[96m	Cycle:		A=0.755929, 	B=0.824823[0m
+[96m	Identity:	A=0.730116, 	B=0.800653
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 3 / 200[0m
+	Discriminator loss:	D_A=0.280443, 	D_B=0.338114
+	Generator loss:		G_A=0.331306, 	G_A=0.511746
+	Cycle loss:		C_A=5.814637, 	C_B=3.568122
+	Identity loss:		I_A=1.612831, 	I_B=2.752092
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.570246, 	B=0.593234[0m
+[96m	Cycle:		A=0.589752, 	B=0.621314[0m
+[96m	Identity:	A=0.557961, 	B=0.580599
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 4 / 200[0m
+	Discriminator loss:	D_A=0.260110, 	D_B=0.512816
+	Generator loss:		G_A=0.414497, 	G_A=0.587804
+	Cycle loss:		C_A=2.590164, 	C_B=3.120528
+	Identity loss:		I_A=1.390450, 	I_B=1.093753
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.467969, 	B=0.497000[0m
+[96m	Cycle:		A=0.473210, 	B=0.519499[0m
+[96m	Identity:	A=0.454309, 	B=0.475731
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 5 / 200[0m
+	Discriminator loss:	D_A=0.292033, 	D_B=0.328577
+	Generator loss:		G_A=0.352442, 	G_A=0.478815
+	Cycle loss:		C_A=3.389746, 	C_B=2.876657
+	Identity loss:		I_A=1.285786, 	I_B=1.616337
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.442048, 	B=0.508463[0m
+[96m	Cycle:		A=0.478659, 	B=0.549355[0m
+[96m	Identity:	A=0.429998, 	B=0.486888
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 6 / 200[0m
+	Discriminator loss:	D_A=0.274588, 	D_B=0.283079
+	Generator loss:		G_A=0.325608, 	G_A=0.356892
+	Cycle loss:		C_A=2.854837, 	C_B=3.225654
+	Identity loss:		I_A=1.414602, 	I_B=1.252384
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.395807, 	B=0.453988[0m
+[96m	Cycle:		A=0.452347, 	B=0.518591[0m
+[96m	Identity:	A=0.384459, 	B=0.447271
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 7 / 200[0m
+	Discriminator loss:	D_A=0.235192, 	D_B=0.254537
+	Generator loss:		G_A=0.332016, 	G_A=0.338074
+	Cycle loss:		C_A=4.175854, 	C_B=2.598861
+	Identity loss:		I_A=1.181549, 	I_B=1.897856
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.334891, 	B=0.384429[0m
+[96m	Cycle:		A=0.333255, 	B=0.388600[0m
+[96m	Identity:	A=0.301438, 	B=0.359989
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 8 / 200[0m
+	Discriminator loss:	D_A=0.246423, 	D_B=0.235304
+	Generator loss:		G_A=0.293219, 	G_A=0.260177
+	Cycle loss:		C_A=7.259638, 	C_B=2.497441
+	Identity loss:		I_A=1.107276, 	I_B=3.336412
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.372000, 	B=0.391030[0m
+[96m	Cycle:		A=0.406908, 	B=0.453779[0m
+[96m	Identity:	A=0.337236, 	B=0.374171
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 9 / 200[0m
+	Discriminator loss:	D_A=0.236658, 	D_B=0.287614
+	Generator loss:		G_A=0.325575, 	G_A=0.482730
+	Cycle loss:		C_A=2.748747, 	C_B=2.477911
+	Identity loss:		I_A=1.081804, 	I_B=1.422426
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.411414, 	B=0.393382[0m
+[96m	Cycle:		A=0.435378, 	B=0.364307[0m
+[96m	Identity:	A=0.391316, 	B=0.345828
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 10 / 200[0m
+	Discriminator loss:	D_A=0.236358, 	D_B=0.234442
+	Generator loss:		G_A=0.297453, 	G_A=0.343318
+	Cycle loss:		C_A=5.431753, 	C_B=2.417001
+	Identity loss:		I_A=1.135557, 	I_B=2.719589
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.346182, 	B=0.399519[0m
+[96m	Cycle:		A=0.320696, 	B=0.400208[0m
+[96m	Identity:	A=0.294532, 	B=0.367428
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 11 / 200[0m
+	Discriminator loss:	D_A=0.236856, 	D_B=0.214004
+	Generator loss:		G_A=0.364192, 	G_A=0.332062
+	Cycle loss:		C_A=2.551253, 	C_B=2.430876
+	Identity loss:		I_A=1.117902, 	I_B=1.298482
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.366252, 	B=0.377879[0m
+[96m	Cycle:		A=0.393994, 	B=0.381300[0m
+[96m	Identity:	A=0.347976, 	B=0.336152
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 12 / 200[0m
+	Discriminator loss:	D_A=0.252710, 	D_B=0.269281
+	Generator loss:		G_A=0.306185, 	G_A=0.425871
+	Cycle loss:		C_A=3.418724, 	C_B=2.167555
+	Identity loss:		I_A=1.034611, 	I_B=1.593789
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.316573, 	B=0.375866[0m
+[96m	Cycle:		A=0.332681, 	B=0.345555[0m
+[96m	Identity:	A=0.308516, 	B=0.304328
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 13 / 200[0m
+	Discriminator loss:	D_A=0.258835, 	D_B=0.343912
+	Generator loss:		G_A=0.344281, 	G_A=0.424533
+	Cycle loss:		C_A=2.931910, 	C_B=2.704525
+	Identity loss:		I_A=1.196739, 	I_B=1.358077
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.312999, 	B=0.442157[0m
+[96m	Cycle:		A=0.332349, 	B=0.393553[0m
+[96m	Identity:	A=0.282682, 	B=0.356926
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 14 / 200[0m
+	Discriminator loss:	D_A=0.240693, 	D_B=0.243781
+	Generator loss:		G_A=0.367576, 	G_A=0.379962
+	Cycle loss:		C_A=2.936014, 	C_B=1.946283
+	Identity loss:		I_A=0.939621, 	I_B=1.376333
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.303416, 	B=0.385763[0m
+[96m	Cycle:		A=0.285160, 	B=0.328833[0m
+[96m	Identity:	A=0.267509, 	B=0.310306
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 15 / 200[0m
+	Discriminator loss:	D_A=0.277404, 	D_B=0.227258
+	Generator loss:		G_A=0.447938, 	G_A=0.387694
+	Cycle loss:		C_A=3.352294, 	C_B=2.050996
+	Identity loss:		I_A=0.870656, 	I_B=1.521130
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.336730, 	B=0.430096[0m
+[96m	Cycle:		A=0.356460, 	B=0.410903[0m
+[96m	Identity:	A=0.299125, 	B=0.349190
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 16 / 200[0m
+	Discriminator loss:	D_A=0.244800, 	D_B=0.258363
+	Generator loss:		G_A=0.332195, 	G_A=0.667946
+	Cycle loss:		C_A=8.560301, 	C_B=1.826503
+	Identity loss:		I_A=0.920070, 	I_B=4.227691
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.292967, 	B=0.451145[0m
+[96m	Cycle:		A=0.300211, 	B=0.369842[0m
+[96m	Identity:	A=0.273110, 	B=0.335628
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 17 / 200[0m
+	Discriminator loss:	D_A=0.216190, 	D_B=0.213561
+	Generator loss:		G_A=0.339797, 	G_A=0.403527
+	Cycle loss:		C_A=2.205353, 	C_B=2.226519
+	Identity loss:		I_A=0.929610, 	I_B=1.053597
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.336040, 	B=0.391615[0m
+[96m	Cycle:		A=0.336650, 	B=0.341484[0m
+[96m	Identity:	A=0.301103, 	B=0.297063
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 18 / 200[0m
+	Discriminator loss:	D_A=0.241226, 	D_B=0.256321
+	Generator loss:		G_A=0.359234, 	G_A=0.654387
+	Cycle loss:		C_A=3.523896, 	C_B=1.694962
+	Identity loss:		I_A=0.799474, 	I_B=1.682000
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.285649, 	B=0.464718[0m
+[96m	Cycle:		A=0.364944, 	B=0.423397[0m
+[96m	Identity:	A=0.291020, 	B=0.367775
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 19 / 200[0m
+	Discriminator loss:	D_A=0.246049, 	D_B=0.201912
+	Generator loss:		G_A=0.252146, 	G_A=0.362426
+	Cycle loss:		C_A=1.645318, 	C_B=1.760014
+	Identity loss:		I_A=0.783633, 	I_B=0.793968
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.353775, 	B=0.444844[0m
+[96m	Cycle:		A=0.403060, 	B=0.376573[0m
+[96m	Identity:	A=0.364005, 	B=0.332063
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 20 / 200[0m
+	Discriminator loss:	D_A=0.216095, 	D_B=0.234220
+	Generator loss:		G_A=0.303375, 	G_A=0.429215
+	Cycle loss:		C_A=3.466410, 	C_B=2.113131
+	Identity loss:		I_A=0.937505, 	I_B=1.538460
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.326385, 	B=0.401983[0m
+[96m	Cycle:		A=0.375206, 	B=0.358171[0m
+[96m	Identity:	A=0.335024, 	B=0.313385
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[92m	Saving models at the end of epoch 20[0m
+[1m
+Start of epoch 21 / 200[0m
+	Discriminator loss:	D_A=0.230498, 	D_B=0.222501
+	Generator loss:		G_A=0.332194, 	G_A=0.334743
+	Cycle loss:		C_A=4.625065, 	C_B=1.942351
+	Identity loss:		I_A=0.859274, 	I_B=2.461503
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.307569, 	B=0.446400[0m
+[96m	Cycle:		A=0.407000, 	B=0.374543[0m
+[96m	Identity:	A=0.350176, 	B=0.328257
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 22 / 200[0m
+	Discriminator loss:	D_A=0.232269, 	D_B=0.231279
+	Generator loss:		G_A=0.374302, 	G_A=0.553156
+	Cycle loss:		C_A=2.720100, 	C_B=1.575097
+	Identity loss:		I_A=0.688375, 	I_B=1.227250
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.294542, 	B=0.422478[0m
+[96m	Cycle:		A=0.311153, 	B=0.348537[0m
+[96m	Identity:	A=0.278446, 	B=0.322479
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 23 / 200[0m
+	Discriminator loss:	D_A=0.268528, 	D_B=0.233265
+	Generator loss:		G_A=0.406136, 	G_A=0.317344
+	Cycle loss:		C_A=2.403245, 	C_B=1.530136
+	Identity loss:		I_A=0.696405, 	I_B=1.171268
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.304015, 	B=0.414048[0m
+[96m	Cycle:		A=0.299851, 	B=0.349278[0m
+[96m	Identity:	A=0.270604, 	B=0.317685
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 24 / 200[0m
+	Discriminator loss:	D_A=0.197844, 	D_B=0.203115
+	Generator loss:		G_A=0.516869, 	G_A=0.460467
+	Cycle loss:		C_A=2.869459, 	C_B=1.899297
+	Identity loss:		I_A=0.836868, 	I_B=1.105148
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.369822, 	B=0.408337[0m
+[96m	Cycle:		A=0.344076, 	B=0.402635[0m
+[96m	Identity:	A=0.305819, 	B=0.334498
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 25 / 200[0m
+	Discriminator loss:	D_A=0.212212, 	D_B=0.212437
+	Generator loss:		G_A=0.387883, 	G_A=0.374535
+	Cycle loss:		C_A=2.282258, 	C_B=1.782407
+	Identity loss:		I_A=0.787267, 	I_B=1.134013
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.407966, 	B=0.431140[0m
+[96m	Cycle:		A=0.342467, 	B=0.385627[0m
+[96m	Identity:	A=0.284837, 	B=0.340239
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 26 / 200[0m
+	Discriminator loss:	D_A=0.211730, 	D_B=0.310045
+	Generator loss:		G_A=0.381838, 	G_A=0.366681
+	Cycle loss:		C_A=8.668219, 	C_B=1.601637
+	Identity loss:		I_A=0.752948, 	I_B=4.442198
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.502421, 	B=0.423619[0m
+[96m	Cycle:		A=0.450758, 	B=0.390177[0m
+[96m	Identity:	A=0.404322, 	B=0.326288
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 27 / 200[0m
+	Discriminator loss:	D_A=0.240703, 	D_B=0.193546
+	Generator loss:		G_A=0.400410, 	G_A=0.335372
+	Cycle loss:		C_A=3.902248, 	C_B=1.817268
+	Identity loss:		I_A=0.770484, 	I_B=1.733833
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.345781, 	B=0.406538[0m
+[96m	Cycle:		A=0.348362, 	B=0.348859[0m
+[96m	Identity:	A=0.312656, 	B=0.308667
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 28 / 200[0m
+	Discriminator loss:	D_A=0.180572, 	D_B=0.147692
+	Generator loss:		G_A=0.414439, 	G_A=0.359901
+	Cycle loss:		C_A=1.935482, 	C_B=1.780357
+	Identity loss:		I_A=0.842572, 	I_B=0.947369
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.429214, 	B=0.432607[0m
+[96m	Cycle:		A=0.303136, 	B=0.374993[0m
+[96m	Identity:	A=0.285237, 	B=0.342623
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 29 / 200[0m
+	Discriminator loss:	D_A=0.202090, 	D_B=0.185023
+	Generator loss:		G_A=0.430516, 	G_A=0.298887
+	Cycle loss:		C_A=1.471832, 	C_B=1.805261
+	Identity loss:		I_A=0.901712, 	I_B=0.592578
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.388081, 	B=0.461572[0m
+[96m	Cycle:		A=0.300567, 	B=0.397906[0m
+[96m	Identity:	A=0.280416, 	B=0.381479
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 30 / 200[0m
+	Discriminator loss:	D_A=0.195067, 	D_B=0.221899
+	Generator loss:		G_A=0.528847, 	G_A=0.358491
+	Cycle loss:		C_A=3.611187, 	C_B=1.649283
+	Identity loss:		I_A=0.696187, 	I_B=1.671002
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.433078, 	B=0.428486[0m
+[96m	Cycle:		A=0.348422, 	B=0.382842[0m
+[96m	Identity:	A=0.263640, 	B=0.363648
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 31 / 200[0m
+	Discriminator loss:	D_A=0.193251, 	D_B=0.226469
+	Generator loss:		G_A=0.431446, 	G_A=0.387724
+	Cycle loss:		C_A=5.915497, 	C_B=1.831284
+	Identity loss:		I_A=0.713714, 	I_B=2.959640
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.660282, 	B=0.460851[0m
+[96m	Cycle:		A=0.486576, 	B=0.454910[0m
+[96m	Identity:	A=0.434591, 	B=0.378444
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 32 / 200[0m
+	Discriminator loss:	D_A=0.193428, 	D_B=0.201346
+	Generator loss:		G_A=0.384749, 	G_A=0.544819
+	Cycle loss:		C_A=2.031281, 	C_B=1.503475
+	Identity loss:		I_A=0.677478, 	I_B=0.945155
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.442407, 	B=0.442164[0m
+[96m	Cycle:		A=0.286113, 	B=0.364670[0m
+[96m	Identity:	A=0.267669, 	B=0.331473
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 33 / 200[0m
+	Discriminator loss:	D_A=0.220656, 	D_B=0.188487
+	Generator loss:		G_A=0.495062, 	G_A=0.698750
+	Cycle loss:		C_A=2.385946, 	C_B=1.573842
+	Identity loss:		I_A=0.693586, 	I_B=1.157587
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.460672, 	B=0.401080[0m
+[96m	Cycle:		A=0.361158, 	B=0.342079[0m
+[96m	Identity:	A=0.277704, 	B=0.296687
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 34 / 200[0m
+	Discriminator loss:	D_A=0.302630, 	D_B=0.182967
+	Generator loss:		G_A=0.464044, 	G_A=0.479991
+	Cycle loss:		C_A=1.408434, 	C_B=1.302608
+	Identity loss:		I_A=0.592825, 	I_B=0.680724
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.426501, 	B=0.472559[0m
+[96m	Cycle:		A=0.312517, 	B=0.404689[0m
+[96m	Identity:	A=0.275599, 	B=0.381290
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 35 / 200[0m
+	Discriminator loss:	D_A=0.201155, 	D_B=0.199861
+	Generator loss:		G_A=0.561045, 	G_A=0.340820
+	Cycle loss:		C_A=5.868426, 	C_B=1.626553
+	Identity loss:		I_A=0.693346, 	I_B=2.691594
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.586142, 	B=0.453511[0m
+[96m	Cycle:		A=0.437780, 	B=0.408929[0m
+[96m	Identity:	A=0.370421, 	B=0.334537
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 36 / 200[0m
+	Discriminator loss:	D_A=0.185751, 	D_B=0.219370
+	Generator loss:		G_A=0.463123, 	G_A=0.351896
+	Cycle loss:		C_A=8.124445, 	C_B=1.472164
+	Identity loss:		I_A=0.603307, 	I_B=3.866766
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.415433, 	B=0.422058[0m
+[96m	Cycle:		A=0.262912, 	B=0.391499[0m
+[96m	Identity:	A=0.229387, 	B=0.373883
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 37 / 200[0m
+	Discriminator loss:	D_A=0.171218, 	D_B=0.212904
+	Generator loss:		G_A=0.323428, 	G_A=0.368564
+	Cycle loss:		C_A=6.824790, 	C_B=1.520381
+	Identity loss:		I_A=0.653396, 	I_B=2.939701
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.444450, 	B=0.470814[0m
+[96m	Cycle:		A=0.311331, 	B=0.435982[0m
+[96m	Identity:	A=0.254207, 	B=0.409452
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 38 / 200[0m
+	Discriminator loss:	D_A=0.216286, 	D_B=0.197046
+	Generator loss:		G_A=0.317992, 	G_A=0.521744
+	Cycle loss:		C_A=2.257491, 	C_B=1.359337
+	Identity loss:		I_A=0.582167, 	I_B=1.054013
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.514329, 	B=0.425867[0m
+[96m	Cycle:		A=0.319084, 	B=0.366576[0m
+[96m	Identity:	A=0.270497, 	B=0.324005
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 39 / 200[0m
+	Discriminator loss:	D_A=0.158175, 	D_B=0.122034
+	Generator loss:		G_A=0.437031, 	G_A=0.490732
+	Cycle loss:		C_A=2.894206, 	C_B=1.419606
+	Identity loss:		I_A=0.684178, 	I_B=1.356676
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.535676, 	B=0.394976[0m
+[96m	Cycle:		A=0.308326, 	B=0.343885[0m
+[96m	Identity:	A=0.292114, 	B=0.317190
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 40 / 200[0m
+	Discriminator loss:	D_A=0.187280, 	D_B=0.266061
+	Generator loss:		G_A=0.486298, 	G_A=0.275866
+	Cycle loss:		C_A=4.106271, 	C_B=1.591034
+	Identity loss:		I_A=0.709845, 	I_B=1.764316
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.550862, 	B=0.468632[0m
+[96m	Cycle:		A=0.338032, 	B=0.436819[0m
+[96m	Identity:	A=0.283560, 	B=0.382780
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[92m	Saving models at the end of epoch 40[0m
+[1m
+Start of epoch 41 / 200[0m
+	Discriminator loss:	D_A=0.175205, 	D_B=0.239129
+	Generator loss:		G_A=0.601295, 	G_A=0.305250
+	Cycle loss:		C_A=1.637348, 	C_B=1.430651
+	Identity loss:		I_A=0.644078, 	I_B=0.573513
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.486244, 	B=0.439233[0m
+[96m	Cycle:		A=0.311004, 	B=0.408912[0m
+[96m	Identity:	A=0.280189, 	B=0.367937
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 42 / 200[0m
+	Discriminator loss:	D_A=0.150426, 	D_B=0.231525
+	Generator loss:		G_A=0.482541, 	G_A=0.314231
+	Cycle loss:		C_A=3.531838, 	C_B=1.443916
+	Identity loss:		I_A=0.686007, 	I_B=1.739004
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.497110, 	B=0.431804[0m
+[96m	Cycle:		A=0.281108, 	B=0.371160[0m
+[96m	Identity:	A=0.269204, 	B=0.351428
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 43 / 200[0m
+	Discriminator loss:	D_A=0.232946, 	D_B=0.277019
+	Generator loss:		G_A=0.686135, 	G_A=0.279512
+	Cycle loss:		C_A=2.462873, 	C_B=1.639311
+	Identity loss:		I_A=0.729450, 	I_B=0.972530
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.366912, 	B=0.469279[0m
+[96m	Cycle:		A=0.366779, 	B=0.378579[0m
+[96m	Identity:	A=0.331324, 	B=0.354046
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 44 / 200[0m
+	Discriminator loss:	D_A=0.156653, 	D_B=0.248468
+	Generator loss:		G_A=0.419678, 	G_A=0.293331
+	Cycle loss:		C_A=2.286568, 	C_B=1.122350
+	Identity loss:		I_A=0.486366, 	I_B=0.907638
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.576668, 	B=0.461864[0m
+[96m	Cycle:		A=0.365847, 	B=0.388102[0m
+[96m	Identity:	A=0.287322, 	B=0.362289
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 45 / 200[0m
+	Discriminator loss:	D_A=0.167877, 	D_B=0.265159
+	Generator loss:		G_A=0.491134, 	G_A=0.274181
+	Cycle loss:		C_A=1.509394, 	C_B=1.194296
+	Identity loss:		I_A=0.540035, 	I_B=0.692491
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.510627, 	B=0.447563[0m
+[96m	Cycle:		A=0.283155, 	B=0.369480[0m
+[96m	Identity:	A=0.279621, 	B=0.353907
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 46 / 200[0m
+	Discriminator loss:	D_A=0.169663, 	D_B=0.239868
+	Generator loss:		G_A=0.355878, 	G_A=0.300965
+	Cycle loss:		C_A=2.000007, 	C_B=1.113759
+	Identity loss:		I_A=0.525812, 	I_B=1.361682
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.532360, 	B=0.484541[0m
+[96m	Cycle:		A=0.336949, 	B=0.421142[0m
+[96m	Identity:	A=0.295908, 	B=0.394546
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 47 / 200[0m
+	Discriminator loss:	D_A=0.109860, 	D_B=0.261860
+	Generator loss:		G_A=0.626859, 	G_A=0.293666
+	Cycle loss:		C_A=1.475334, 	C_B=1.434084
+	Identity loss:		I_A=0.668418, 	I_B=0.716489
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.650535, 	B=0.475309[0m
+[96m	Cycle:		A=0.481660, 	B=0.397693[0m
+[96m	Identity:	A=0.347449, 	B=0.387364
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 48 / 200[0m
+	Discriminator loss:	D_A=0.188238, 	D_B=0.267809
+	Generator loss:		G_A=0.423891, 	G_A=0.281812
+	Cycle loss:		C_A=1.493044, 	C_B=1.197912
+	Identity loss:		I_A=0.537998, 	I_B=0.695857
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.547976, 	B=0.376559[0m
+[96m	Cycle:		A=0.334167, 	B=0.303324[0m
+[96m	Identity:	A=0.246412, 	B=0.293303
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 49 / 200[0m
+	Discriminator loss:	D_A=0.191161, 	D_B=0.251239
+	Generator loss:		G_A=0.693503, 	G_A=0.311688
+	Cycle loss:		C_A=1.137931, 	C_B=1.377022
+	Identity loss:		I_A=0.573855, 	I_B=0.498937
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.422220, 	B=0.503402[0m
+[96m	Cycle:		A=0.327546, 	B=0.414241[0m
+[96m	Identity:	A=0.326409, 	B=0.389182
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 50 / 200[0m
+	Discriminator loss:	D_A=0.265562, 	D_B=0.219107
+	Generator loss:		G_A=0.224736, 	G_A=0.294311
+	Cycle loss:		C_A=1.382813, 	C_B=1.100090
+	Identity loss:		I_A=0.478482, 	I_B=0.597755
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.622396, 	B=0.438623[0m
+[96m	Cycle:		A=0.330801, 	B=0.372769[0m
+[96m	Identity:	A=0.300842, 	B=0.321055
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 51 / 200[0m
+	Discriminator loss:	D_A=0.282011, 	D_B=0.233872
+	Generator loss:		G_A=0.224492, 	G_A=0.302442
+	Cycle loss:		C_A=2.687739, 	C_B=1.021123
+	Identity loss:		I_A=0.459688, 	I_B=1.160025
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.553543, 	B=0.467626[0m
+[96m	Cycle:		A=0.329295, 	B=0.407615[0m
+[96m	Identity:	A=0.270986, 	B=0.379288
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 52 / 200[0m
+	Discriminator loss:	D_A=0.277490, 	D_B=0.248749
+	Generator loss:		G_A=0.241350, 	G_A=0.306094
+	Cycle loss:		C_A=1.897280, 	C_B=1.163596
+	Identity loss:		I_A=0.467088, 	I_B=0.621487
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.370043, 	B=0.448232[0m
+[96m	Cycle:		A=0.371523, 	B=0.350475[0m
+[96m	Identity:	A=0.340529, 	B=0.336932
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 53 / 200[0m
+	Discriminator loss:	D_A=0.229922, 	D_B=0.229032
+	Generator loss:		G_A=0.238962, 	G_A=0.326520
+	Cycle loss:		C_A=1.853424, 	C_B=1.074537
+	Identity loss:		I_A=0.575259, 	I_B=0.681880
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.513554, 	B=0.480948[0m
+[96m	Cycle:		A=0.275883, 	B=0.369780[0m
+[96m	Identity:	A=0.250144, 	B=0.352994
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 54 / 200[0m
+	Discriminator loss:	D_A=0.264870, 	D_B=0.234395
+	Generator loss:		G_A=0.270191, 	G_A=0.292131
+	Cycle loss:		C_A=1.341238, 	C_B=1.376911
+	Identity loss:		I_A=0.630490, 	I_B=0.836871
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.685080, 	B=0.429812[0m
+[96m	Cycle:		A=0.314178, 	B=0.354915[0m
+[96m	Identity:	A=0.328554, 	B=0.342719
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 55 / 200[0m
+	Discriminator loss:	D_A=0.262583, 	D_B=0.259464
+	Generator loss:		G_A=0.260531, 	G_A=0.287630
+	Cycle loss:		C_A=1.586308, 	C_B=1.047145
+	Identity loss:		I_A=0.434943, 	I_B=0.779247
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.613164, 	B=0.460350[0m
+[96m	Cycle:		A=0.251677, 	B=0.371760[0m
+[96m	Identity:	A=0.252594, 	B=0.357426
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 56 / 200[0m
+	Discriminator loss:	D_A=0.269869, 	D_B=0.270286
+	Generator loss:		G_A=0.254990, 	G_A=0.271049
+	Cycle loss:		C_A=2.294097, 	C_B=1.109608
+	Identity loss:		I_A=0.477542, 	I_B=1.028250
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.625245, 	B=0.438190[0m
+[96m	Cycle:		A=0.256967, 	B=0.350009[0m
+[96m	Identity:	A=0.213765, 	B=0.336760
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 57 / 200[0m
+	Discriminator loss:	D_A=0.249199, 	D_B=0.225163
+	Generator loss:		G_A=0.240376, 	G_A=0.307087
+	Cycle loss:		C_A=5.500255, 	C_B=1.424685
+	Identity loss:		I_A=0.561653, 	I_B=2.719056
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.644720, 	B=0.472254[0m
+[96m	Cycle:		A=0.254973, 	B=0.398338[0m
+[96m	Identity:	A=0.220221, 	B=0.378976
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 58 / 200[0m
+	Discriminator loss:	D_A=0.217540, 	D_B=0.236879
+	Generator loss:		G_A=0.312271, 	G_A=0.301020
+	Cycle loss:		C_A=2.413621, 	C_B=1.301606
+	Identity loss:		I_A=0.623513, 	I_B=1.071994
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.755823, 	B=0.458873[0m
+[96m	Cycle:		A=0.298105, 	B=0.336275[0m
+[96m	Identity:	A=0.264859, 	B=0.314732
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 59 / 200[0m
+	Discriminator loss:	D_A=0.248391, 	D_B=0.261514
+	Generator loss:		G_A=0.221792, 	G_A=0.295196
+	Cycle loss:		C_A=1.275321, 	C_B=1.070355
+	Identity loss:		I_A=0.444468, 	I_B=0.505124
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.688734, 	B=0.448043[0m
+[96m	Cycle:		A=0.317415, 	B=0.422682[0m
+[96m	Identity:	A=0.246815, 	B=0.392679
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 60 / 200[0m
+	Discriminator loss:	D_A=0.252861, 	D_B=0.244272
+	Generator loss:		G_A=0.266112, 	G_A=0.290450
+	Cycle loss:		C_A=1.339073, 	C_B=1.114829
+	Identity loss:		I_A=0.443427, 	I_B=0.582252
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.658662, 	B=0.455808[0m
+[96m	Cycle:		A=0.258884, 	B=0.398801[0m
+[96m	Identity:	A=0.228802, 	B=0.378853
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[92m	Saving models at the end of epoch 60[0m
+[1m
+Start of epoch 61 / 200[0m
+	Discriminator loss:	D_A=0.233757, 	D_B=0.242745
+	Generator loss:		G_A=0.287871, 	G_A=0.290629
+	Cycle loss:		C_A=2.356117, 	C_B=1.286057
+	Identity loss:		I_A=0.572244, 	I_B=1.187339
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.710992, 	B=0.399784[0m
+[96m	Cycle:		A=0.241488, 	B=0.299172[0m
+[96m	Identity:	A=0.221010, 	B=0.277001
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 62 / 200[0m
+	Discriminator loss:	D_A=0.265212, 	D_B=0.232813
+	Generator loss:		G_A=0.269481, 	G_A=0.317785
+	Cycle loss:		C_A=5.275699, 	C_B=1.012526
+	Identity loss:		I_A=0.475303, 	I_B=2.640127
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.829010, 	B=0.461920[0m
+[96m	Cycle:		A=0.334498, 	B=0.360724[0m
+[96m	Identity:	A=0.260737, 	B=0.347270
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 63 / 200[0m
+	Discriminator loss:	D_A=0.251108, 	D_B=0.239346
+	Generator loss:		G_A=0.283640, 	G_A=0.295285
+	Cycle loss:		C_A=4.900746, 	C_B=1.023564
+	Identity loss:		I_A=0.398690, 	I_B=2.536300
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.845960, 	B=0.456514[0m
+[96m	Cycle:		A=0.332480, 	B=0.363950[0m
+[96m	Identity:	A=0.287159, 	B=0.345996
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 64 / 200[0m
+	Discriminator loss:	D_A=0.268780, 	D_B=0.225161
+	Generator loss:		G_A=0.239509, 	G_A=0.301319
+	Cycle loss:		C_A=2.321384, 	C_B=1.044727
+	Identity loss:		I_A=0.471201, 	I_B=1.132558
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.883710, 	B=0.450711[0m
+[96m	Cycle:		A=0.320416, 	B=0.403140[0m
+[96m	Identity:	A=0.302677, 	B=0.377373
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 65 / 200[0m
+	Discriminator loss:	D_A=0.255266, 	D_B=0.237931
+	Generator loss:		G_A=0.219062, 	G_A=0.331432
+	Cycle loss:		C_A=1.691440, 	C_B=1.009713
+	Identity loss:		I_A=0.475140, 	I_B=0.573144
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.630853, 	B=0.403909[0m
+[96m	Cycle:		A=0.372195, 	B=0.312914[0m
+[96m	Identity:	A=0.379885, 	B=0.288745
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 66 / 200[0m
+	Discriminator loss:	D_A=0.250058, 	D_B=0.232831
+	Generator loss:		G_A=0.331136, 	G_A=0.299859
+	Cycle loss:		C_A=1.629753, 	C_B=1.050309
+	Identity loss:		I_A=0.454921, 	I_B=0.700858
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.647108, 	B=0.399497[0m
+[96m	Cycle:		A=0.246291, 	B=0.366271[0m
+[96m	Identity:	A=0.244702, 	B=0.350930
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 67 / 200[0m
+	Discriminator loss:	D_A=0.252806, 	D_B=0.252919
+	Generator loss:		G_A=0.248684, 	G_A=0.280640
+	Cycle loss:		C_A=1.743030, 	C_B=1.158442
+	Identity loss:		I_A=0.570624, 	I_B=0.764331
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.531892, 	B=0.490108[0m
+[96m	Cycle:		A=0.245967, 	B=0.365527[0m
+[96m	Identity:	A=0.238735, 	B=0.349846
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 68 / 200[0m
+	Discriminator loss:	D_A=0.252413, 	D_B=0.215963
+	Generator loss:		G_A=0.313265, 	G_A=0.306950
+	Cycle loss:		C_A=1.050256, 	C_B=0.909699
+	Identity loss:		I_A=0.443362, 	I_B=0.573709
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.753631, 	B=0.446747[0m
+[96m	Cycle:		A=0.258877, 	B=0.363536[0m
+[96m	Identity:	A=0.243457, 	B=0.342751
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 69 / 200[0m
+	Discriminator loss:	D_A=0.262950, 	D_B=0.218163
+	Generator loss:		G_A=0.241426, 	G_A=0.272392
+	Cycle loss:		C_A=0.784509, 	C_B=0.969675
+	Identity loss:		I_A=0.433970, 	I_B=0.346487
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.748593, 	B=0.467396[0m
+[96m	Cycle:		A=0.273919, 	B=0.372349[0m
+[96m	Identity:	A=0.236080, 	B=0.333290
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 70 / 200[0m
+	Discriminator loss:	D_A=0.252705, 	D_B=0.245973
+	Generator loss:		G_A=0.305090, 	G_A=0.302039
+	Cycle loss:		C_A=2.359715, 	C_B=1.250815
+	Identity loss:		I_A=0.542787, 	I_B=0.899409
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.774800, 	B=0.430286[0m
+[96m	Cycle:		A=0.321780, 	B=0.404664[0m
+[96m	Identity:	A=0.237771, 	B=0.371455
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 71 / 200[0m
+	Discriminator loss:	D_A=0.244434, 	D_B=0.251377
+	Generator loss:		G_A=0.288100, 	G_A=0.392061
+	Cycle loss:		C_A=1.632057, 	C_B=0.956610
+	Identity loss:		I_A=0.441417, 	I_B=0.718007
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.672369, 	B=0.468796[0m
+[96m	Cycle:		A=0.253610, 	B=0.371452[0m
+[96m	Identity:	A=0.210913, 	B=0.343250
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 72 / 200[0m
+	Discriminator loss:	D_A=0.234255, 	D_B=0.224955
+	Generator loss:		G_A=0.288012, 	G_A=0.340011
+	Cycle loss:		C_A=13.793483, 	C_B=0.972571
+	Identity loss:		I_A=0.439764, 	I_B=6.997156
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.939177, 	B=0.488803[0m
+[96m	Cycle:		A=0.346682, 	B=0.406901[0m
+[96m	Identity:	A=0.277956, 	B=0.371210
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 73 / 200[0m
+	Discriminator loss:	D_A=0.243082, 	D_B=0.255130
+	Generator loss:		G_A=0.274643, 	G_A=0.327404
+	Cycle loss:		C_A=1.154975, 	C_B=1.191482
+	Identity loss:		I_A=0.601906, 	I_B=0.442355
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.643914, 	B=0.377228[0m
+[96m	Cycle:		A=0.246439, 	B=0.308247[0m
+[96m	Identity:	A=0.222494, 	B=0.278169
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 74 / 200[0m
+	Discriminator loss:	D_A=0.259979, 	D_B=0.228262
+	Generator loss:		G_A=0.279103, 	G_A=0.284528
+	Cycle loss:		C_A=1.744962, 	C_B=1.272174
+	Identity loss:		I_A=0.556127, 	I_B=0.770145
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.858508, 	B=0.485571[0m
+[96m	Cycle:		A=0.308349, 	B=0.404891[0m
+[96m	Identity:	A=0.268937, 	B=0.372017
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 75 / 200[0m
+	Discriminator loss:	D_A=0.268871, 	D_B=0.221371
+	Generator loss:		G_A=0.245128, 	G_A=0.315991
+	Cycle loss:		C_A=1.359463, 	C_B=0.943945
+	Identity loss:		I_A=0.419442, 	I_B=0.713698
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.782485, 	B=0.487212[0m
+[96m	Cycle:		A=0.246312, 	B=0.374118[0m
+[96m	Identity:	A=0.225292, 	B=0.354077
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 76 / 200[0m
+	Discriminator loss:	D_A=0.279508, 	D_B=0.241216
+	Generator loss:		G_A=0.203893, 	G_A=0.403483
+	Cycle loss:		C_A=2.029418, 	C_B=0.903552
+	Identity loss:		I_A=0.361688, 	I_B=0.807252
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.943030, 	B=0.464880[0m
+[96m	Cycle:		A=0.395331, 	B=0.387994[0m
+[96m	Identity:	A=0.322378, 	B=0.359228
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 77 / 200[0m
+	Discriminator loss:	D_A=0.251172, 	D_B=0.212158
+	Generator loss:		G_A=0.261715, 	G_A=0.376642
+	Cycle loss:		C_A=1.175355, 	C_B=1.098769
+	Identity loss:		I_A=0.521505, 	I_B=0.463565
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.682710, 	B=0.476226[0m
+[96m	Cycle:		A=0.263511, 	B=0.371462[0m
+[96m	Identity:	A=0.230677, 	B=0.350597
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 78 / 200[0m
+	Discriminator loss:	D_A=0.254092, 	D_B=0.223968
+	Generator loss:		G_A=0.266840, 	G_A=0.383574
+	Cycle loss:		C_A=1.140867, 	C_B=1.010507
+	Identity loss:		I_A=0.437469, 	I_B=0.560044
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.669748, 	B=0.487012[0m
+[96m	Cycle:		A=0.246835, 	B=0.374211[0m
+[96m	Identity:	A=0.229556, 	B=0.348970
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 79 / 200[0m
+	Discriminator loss:	D_A=0.263112, 	D_B=0.213926
+	Generator loss:		G_A=0.190038, 	G_A=0.305668
+	Cycle loss:		C_A=1.554351, 	C_B=0.823000
+	Identity loss:		I_A=0.349904, 	I_B=0.740378
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.794272, 	B=0.384840[0m
+[96m	Cycle:		A=0.241171, 	B=0.304229[0m
+[96m	Identity:	A=0.216139, 	B=0.284776
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 80 / 200[0m
+	Discriminator loss:	D_A=0.272691, 	D_B=0.226803
+	Generator loss:		G_A=0.228529, 	G_A=0.330533
+	Cycle loss:		C_A=0.820211, 	C_B=0.878240
+	Identity loss:		I_A=0.390028, 	I_B=0.366693
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.742164, 	B=0.427521[0m
+[96m	Cycle:		A=0.259043, 	B=0.336776[0m
+[96m	Identity:	A=0.219336, 	B=0.316471
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[92m	Saving models at the end of epoch 80[0m
+[1m
+Start of epoch 81 / 200[0m
+	Discriminator loss:	D_A=0.258621, 	D_B=0.262904
+	Generator loss:		G_A=0.206675, 	G_A=0.343396
+	Cycle loss:		C_A=1.399159, 	C_B=0.970417
+	Identity loss:		I_A=0.425753, 	I_B=0.582545
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.774926, 	B=0.432022[0m
+[96m	Cycle:		A=0.235124, 	B=0.334770[0m
+[96m	Identity:	A=0.205441, 	B=0.314480
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 82 / 200[0m
+	Discriminator loss:	D_A=0.277987, 	D_B=0.219566
+	Generator loss:		G_A=0.263576, 	G_A=0.458429
+	Cycle loss:		C_A=1.120001, 	C_B=0.793470
+	Identity loss:		I_A=0.380443, 	I_B=0.533783
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.912155, 	B=0.456648[0m
+[96m	Cycle:		A=0.305403, 	B=0.398218[0m
+[96m	Identity:	A=0.274856, 	B=0.353757
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 83 / 200[0m
+	Discriminator loss:	D_A=0.247636, 	D_B=0.228238
+	Generator loss:		G_A=0.254285, 	G_A=0.207546
+	Cycle loss:		C_A=0.894622, 	C_B=0.815592
+	Identity loss:		I_A=0.354980, 	I_B=0.509849
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.830707, 	B=0.457454[0m
+[96m	Cycle:		A=0.242424, 	B=0.345952[0m
+[96m	Identity:	A=0.218190, 	B=0.333523
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 84 / 200[0m
+	Discriminator loss:	D_A=0.248522, 	D_B=0.253010
+	Generator loss:		G_A=0.250631, 	G_A=0.292807
+	Cycle loss:		C_A=0.977974, 	C_B=0.903499
+	Identity loss:		I_A=0.391313, 	I_B=0.574533
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.751306, 	B=0.430253[0m
+[96m	Cycle:		A=0.252015, 	B=0.321818[0m
+[96m	Identity:	A=0.228280, 	B=0.293259
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 85 / 200[0m
+	Discriminator loss:	D_A=0.252386, 	D_B=0.226973
+	Generator loss:		G_A=0.277055, 	G_A=0.321379
+	Cycle loss:		C_A=1.138825, 	C_B=0.847690
+	Identity loss:		I_A=0.389670, 	I_B=0.517208
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.829239, 	B=0.484311[0m
+[96m	Cycle:		A=0.251667, 	B=0.383066[0m
+[96m	Identity:	A=0.212629, 	B=0.357213
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 86 / 200[0m
+	Discriminator loss:	D_A=0.250734, 	D_B=0.219307
+	Generator loss:		G_A=0.289386, 	G_A=0.423434
+	Cycle loss:		C_A=1.440087, 	C_B=0.843287
+	Identity loss:		I_A=0.346158, 	I_B=0.621497
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.677652, 	B=0.436801[0m
+[96m	Cycle:		A=0.237025, 	B=0.334924[0m
+[96m	Identity:	A=0.206723, 	B=0.303410
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 87 / 200[0m
+	Discriminator loss:	D_A=0.256886, 	D_B=0.173553
+	Generator loss:		G_A=0.274791, 	G_A=0.246364
+	Cycle loss:		C_A=0.782351, 	C_B=0.915715
+	Identity loss:		I_A=0.396785, 	I_B=0.344951
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.862587, 	B=0.444271[0m
+[96m	Cycle:		A=0.277137, 	B=0.363157[0m
+[96m	Identity:	A=0.239933, 	B=0.333393
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 88 / 200[0m
+	Discriminator loss:	D_A=0.237387, 	D_B=0.225493
+	Generator loss:		G_A=0.290719, 	G_A=0.323967
+	Cycle loss:		C_A=1.061206, 	C_B=1.051285
+	Identity loss:		I_A=0.442692, 	I_B=0.443779
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.859373, 	B=0.461084[0m
+[96m	Cycle:		A=0.258562, 	B=0.364378[0m
+[96m	Identity:	A=0.212217, 	B=0.348555
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 89 / 200[0m
+	Discriminator loss:	D_A=0.233867, 	D_B=0.166600
+	Generator loss:		G_A=0.279628, 	G_A=0.293740
+	Cycle loss:		C_A=1.628870, 	C_B=0.899091
+	Identity loss:		I_A=0.396765, 	I_B=0.651768
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.828309, 	B=0.526476[0m
+[96m	Cycle:		A=0.279986, 	B=0.402603[0m
+[96m	Identity:	A=0.251098, 	B=0.380200
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 90 / 200[0m
+	Discriminator loss:	D_A=0.217872, 	D_B=0.201247
+	Generator loss:		G_A=0.347424, 	G_A=0.297417
+	Cycle loss:		C_A=1.075440, 	C_B=1.075582
+	Identity loss:		I_A=0.467952, 	I_B=0.482593
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.803555, 	B=0.478051[0m
+[96m	Cycle:		A=0.241763, 	B=0.380226[0m
+[96m	Identity:	A=0.230279, 	B=0.352438
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 91 / 200[0m
+	Discriminator loss:	D_A=0.260393, 	D_B=0.199921
+	Generator loss:		G_A=0.245822, 	G_A=0.372955
+	Cycle loss:		C_A=1.182144, 	C_B=0.900542
+	Identity loss:		I_A=0.422789, 	I_B=0.600521
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.880434, 	B=0.493898[0m
+[96m	Cycle:		A=0.274325, 	B=0.388063[0m
+[96m	Identity:	A=0.269565, 	B=0.364222
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 92 / 200[0m
+	Discriminator loss:	D_A=0.235308, 	D_B=0.329470
+	Generator loss:		G_A=0.248028, 	G_A=0.540929
+	Cycle loss:		C_A=0.758388, 	C_B=0.862837
+	Identity loss:		I_A=0.365175, 	I_B=0.275903
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.658271, 	B=0.435957[0m
+[96m	Cycle:		A=0.201478, 	B=0.367950[0m
+[96m	Identity:	A=0.186682, 	B=0.340488
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 93 / 200[0m
+	Discriminator loss:	D_A=0.246287, 	D_B=0.230190
+	Generator loss:		G_A=0.301860, 	G_A=0.307428
+	Cycle loss:		C_A=0.935112, 	C_B=0.899487
+	Identity loss:		I_A=0.355881, 	I_B=0.449694
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.876307, 	B=0.429735[0m
+[96m	Cycle:		A=0.257103, 	B=0.320631[0m
+[96m	Identity:	A=0.224068, 	B=0.297551
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 94 / 200[0m
+	Discriminator loss:	D_A=0.271291, 	D_B=0.268038
+	Generator loss:		G_A=0.274270, 	G_A=0.267411
+	Cycle loss:		C_A=1.363423, 	C_B=0.815151
+	Identity loss:		I_A=0.354113, 	I_B=0.694664
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.939630, 	B=0.458763[0m
+[96m	Cycle:		A=0.295451, 	B=0.390316[0m
+[96m	Identity:	A=0.275938, 	B=0.354808
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 95 / 200[0m
+	Discriminator loss:	D_A=0.267659, 	D_B=0.239532
+	Generator loss:		G_A=0.247066, 	G_A=0.363281
+	Cycle loss:		C_A=0.971861, 	C_B=0.850136
+	Identity loss:		I_A=0.350806, 	I_B=0.449388
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.760287, 	B=0.462970[0m
+[96m	Cycle:		A=0.244660, 	B=0.375223[0m
+[96m	Identity:	A=0.225367, 	B=0.330283
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 96 / 200[0m
+	Discriminator loss:	D_A=0.283629, 	D_B=0.286422
+	Generator loss:		G_A=0.241813, 	G_A=0.266093
+	Cycle loss:		C_A=9.626966, 	C_B=0.877218
+	Identity loss:		I_A=0.395477, 	I_B=4.863441
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.899188, 	B=0.420652[0m
+[96m	Cycle:		A=0.226645, 	B=0.349576[0m
+[96m	Identity:	A=0.221618, 	B=0.313064
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 97 / 200[0m
+	Discriminator loss:	D_A=0.263497, 	D_B=0.130785
+	Generator loss:		G_A=0.351622, 	G_A=0.404318
+	Cycle loss:		C_A=0.666086, 	C_B=0.876820
+	Identity loss:		I_A=0.376864, 	I_B=0.287064
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.786129, 	B=0.484637[0m
+[96m	Cycle:		A=0.240258, 	B=0.397536[0m
+[96m	Identity:	A=0.205335, 	B=0.369662
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 98 / 200[0m
+	Discriminator loss:	D_A=0.282721, 	D_B=0.209624
+	Generator loss:		G_A=0.334977, 	G_A=0.386339
+	Cycle loss:		C_A=2.571174, 	C_B=0.742049
+	Identity loss:		I_A=0.310194, 	I_B=1.269398
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.916718, 	B=0.433050[0m
+[96m	Cycle:		A=0.254265, 	B=0.320240[0m
+[96m	Identity:	A=0.213934, 	B=0.289332
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 99 / 200[0m
+	Discriminator loss:	D_A=0.238246, 	D_B=0.191855
+	Generator loss:		G_A=0.310345, 	G_A=0.228300
+	Cycle loss:		C_A=1.202795, 	C_B=0.868227
+	Identity loss:		I_A=0.353682, 	I_B=0.525071
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.863703, 	B=0.427801[0m
+[96m	Cycle:		A=0.308810, 	B=0.345812[0m
+[96m	Identity:	A=0.253225, 	B=0.311364
+[0m
+	Learning rate:		2.00e-04 -> 2.00e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 100 / 200[0m
+	Discriminator loss:	D_A=0.278310, 	D_B=0.205799
+	Generator loss:		G_A=0.270152, 	G_A=0.347279
+	Cycle loss:		C_A=2.833665, 	C_B=0.806896
+	Identity loss:		I_A=0.359942, 	I_B=1.145611
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.521678, 	B=0.496078[0m
+[96m	Cycle:		A=0.233840, 	B=0.416253[0m
+[96m	Identity:	A=0.214834, 	B=0.396877
+[0m
+	Learning rate:		2.00e-04 -> 1.98e-04
+	peak memory use:	20.059G
+[92m	Saving models at the end of epoch 100[0m
+[1m
+Start of epoch 101 / 200[0m
+	Discriminator loss:	D_A=0.252379, 	D_B=0.200631
+	Generator loss:		G_A=0.253595, 	G_A=0.552989
+	Cycle loss:		C_A=3.302495, 	C_B=0.799545
+	Identity loss:		I_A=0.338470, 	I_B=1.559338
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.876628, 	B=0.444250[0m
+[96m	Cycle:		A=0.221152, 	B=0.351174[0m
+[96m	Identity:	A=0.204784, 	B=0.303386
+[0m
+	Learning rate:		1.98e-04 -> 1.96e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 102 / 200[0m
+	Discriminator loss:	D_A=0.268612, 	D_B=0.198629
+	Generator loss:		G_A=0.346355, 	G_A=0.213061
+	Cycle loss:		C_A=1.778636, 	C_B=0.929758
+	Identity loss:		I_A=0.352849, 	I_B=0.720957
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.936962, 	B=0.475086[0m
+[96m	Cycle:		A=0.290335, 	B=0.379917[0m
+[96m	Identity:	A=0.237069, 	B=0.349208
+[0m
+	Learning rate:		1.96e-04 -> 1.94e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 103 / 200[0m
+	Discriminator loss:	D_A=0.257656, 	D_B=0.154925
+	Generator loss:		G_A=0.278392, 	G_A=0.365215
+	Cycle loss:		C_A=1.038765, 	C_B=0.852328
+	Identity loss:		I_A=0.360984, 	I_B=0.549547
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.780932, 	B=0.462103[0m
+[96m	Cycle:		A=0.223662, 	B=0.366269[0m
+[96m	Identity:	A=0.240554, 	B=0.351392
+[0m
+	Learning rate:		1.94e-04 -> 1.92e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 104 / 200[0m
+	Discriminator loss:	D_A=0.253891, 	D_B=0.223704
+	Generator loss:		G_A=0.285267, 	G_A=0.496686
+	Cycle loss:		C_A=1.534966, 	C_B=0.752174
+	Identity loss:		I_A=0.325879, 	I_B=0.651787
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.804164, 	B=0.414414[0m
+[96m	Cycle:		A=0.257164, 	B=0.365817[0m
+[96m	Identity:	A=0.250472, 	B=0.305137
+[0m
+	Learning rate:		1.92e-04 -> 1.90e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 105 / 200[0m
+	Discriminator loss:	D_A=0.270329, 	D_B=0.220610
+	Generator loss:		G_A=0.336524, 	G_A=0.338237
+	Cycle loss:		C_A=0.978215, 	C_B=0.791022
+	Identity loss:		I_A=0.363633, 	I_B=0.423877
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.757210, 	B=0.428477[0m
+[96m	Cycle:		A=0.204302, 	B=0.309022[0m
+[96m	Identity:	A=0.196389, 	B=0.296679
+[0m
+	Learning rate:		1.90e-04 -> 1.88e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 106 / 200[0m
+	Discriminator loss:	D_A=0.216195, 	D_B=0.134445
+	Generator loss:		G_A=0.393965, 	G_A=0.452668
+	Cycle loss:		C_A=1.066141, 	C_B=0.732302
+	Identity loss:		I_A=0.352577, 	I_B=0.469184
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.705168, 	B=0.469834[0m
+[96m	Cycle:		A=0.202902, 	B=0.346901[0m
+[96m	Identity:	A=0.191028, 	B=0.338414
+[0m
+	Learning rate:		1.88e-04 -> 1.86e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 107 / 200[0m
+	Discriminator loss:	D_A=0.249594, 	D_B=0.222030
+	Generator loss:		G_A=0.230063, 	G_A=0.267615
+	Cycle loss:		C_A=1.352543, 	C_B=0.787854
+	Identity loss:		I_A=0.328784, 	I_B=0.631476
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.596076, 	B=0.450966[0m
+[96m	Cycle:		A=0.226305, 	B=0.343736[0m
+[96m	Identity:	A=0.230010, 	B=0.314873
+[0m
+	Learning rate:		1.86e-04 -> 1.84e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 108 / 200[0m
+	Discriminator loss:	D_A=0.256817, 	D_B=0.244734
+	Generator loss:		G_A=0.332258, 	G_A=0.553147
+	Cycle loss:		C_A=1.162587, 	C_B=0.850674
+	Identity loss:		I_A=0.368375, 	I_B=0.482575
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.871540, 	B=0.458223[0m
+[96m	Cycle:		A=0.226904, 	B=0.371094[0m
+[96m	Identity:	A=0.188914, 	B=0.342867
+[0m
+	Learning rate:		1.84e-04 -> 1.82e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 109 / 200[0m
+	Discriminator loss:	D_A=0.236930, 	D_B=0.213427
+	Generator loss:		G_A=0.293194, 	G_A=0.626293
+	Cycle loss:		C_A=2.158134, 	C_B=0.670462
+	Identity loss:		I_A=0.285334, 	I_B=1.045928
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.922080, 	B=0.449594[0m
+[96m	Cycle:		A=0.249638, 	B=0.375010[0m
+[96m	Identity:	A=0.225735, 	B=0.341186
+[0m
+	Learning rate:		1.82e-04 -> 1.80e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 110 / 200[0m
+	Discriminator loss:	D_A=0.259234, 	D_B=0.189081
+	Generator loss:		G_A=0.244794, 	G_A=0.281363
+	Cycle loss:		C_A=0.831604, 	C_B=0.623390
+	Identity loss:		I_A=0.274454, 	I_B=0.307374
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.932830, 	B=0.415971[0m
+[96m	Cycle:		A=0.241329, 	B=0.324371[0m
+[96m	Identity:	A=0.210066, 	B=0.307172
+[0m
+	Learning rate:		1.80e-04 -> 1.78e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 111 / 200[0m
+	Discriminator loss:	D_A=0.255695, 	D_B=0.199054
+	Generator loss:		G_A=0.239151, 	G_A=0.310728
+	Cycle loss:		C_A=1.355870, 	C_B=0.732191
+	Identity loss:		I_A=0.341214, 	I_B=0.552750
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.774806, 	B=0.452214[0m
+[96m	Cycle:		A=0.225223, 	B=0.372901[0m
+[96m	Identity:	A=0.189128, 	B=0.360958
+[0m
+	Learning rate:		1.78e-04 -> 1.76e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 112 / 200[0m
+	Discriminator loss:	D_A=0.268550, 	D_B=0.158826
+	Generator loss:		G_A=0.318043, 	G_A=0.306873
+	Cycle loss:		C_A=0.551097, 	C_B=0.596373
+	Identity loss:		I_A=0.264471, 	I_B=0.333762
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.710749, 	B=0.451041[0m
+[96m	Cycle:		A=0.222626, 	B=0.338690[0m
+[96m	Identity:	A=0.210287, 	B=0.314776
+[0m
+	Learning rate:		1.76e-04 -> 1.74e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 113 / 200[0m
+	Discriminator loss:	D_A=0.240148, 	D_B=0.159755
+	Generator loss:		G_A=0.324632, 	G_A=0.430381
+	Cycle loss:		C_A=0.670742, 	C_B=0.827706
+	Identity loss:		I_A=0.347164, 	I_B=0.328005
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.779270, 	B=0.392537[0m
+[96m	Cycle:		A=0.209034, 	B=0.327457[0m
+[96m	Identity:	A=0.195940, 	B=0.302906
+[0m
+	Learning rate:		1.74e-04 -> 1.72e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 114 / 200[0m
+	Discriminator loss:	D_A=0.265625, 	D_B=0.197640
+	Generator loss:		G_A=0.310431, 	G_A=0.327795
+	Cycle loss:		C_A=1.051340, 	C_B=0.770713
+	Identity loss:		I_A=0.321440, 	I_B=0.534293
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.691121, 	B=0.453175[0m
+[96m	Cycle:		A=0.219116, 	B=0.335199[0m
+[96m	Identity:	A=0.220737, 	B=0.318309
+[0m
+	Learning rate:		1.72e-04 -> 1.70e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 115 / 200[0m
+	Discriminator loss:	D_A=0.240672, 	D_B=0.147840
+	Generator loss:		G_A=0.426595, 	G_A=0.294194
+	Cycle loss:		C_A=0.595769, 	C_B=0.654161
+	Identity loss:		I_A=0.301193, 	I_B=0.277624
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.753693, 	B=0.409675[0m
+[96m	Cycle:		A=0.209324, 	B=0.298417[0m
+[96m	Identity:	A=0.195119, 	B=0.271355
+[0m
+	Learning rate:		1.70e-04 -> 1.68e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 116 / 200[0m
+	Discriminator loss:	D_A=0.253643, 	D_B=0.195033
+	Generator loss:		G_A=0.347047, 	G_A=0.372172
+	Cycle loss:		C_A=0.926322, 	C_B=0.784259
+	Identity loss:		I_A=0.310840, 	I_B=0.460554
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.641079, 	B=0.442810[0m
+[96m	Cycle:		A=0.200050, 	B=0.341775[0m
+[96m	Identity:	A=0.191538, 	B=0.321709
+[0m
+	Learning rate:		1.68e-04 -> 1.66e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 117 / 200[0m
+	Discriminator loss:	D_A=0.209782, 	D_B=0.145821
+	Generator loss:		G_A=0.418474, 	G_A=0.379644
+	Cycle loss:		C_A=0.982618, 	C_B=0.616367
+	Identity loss:		I_A=0.258602, 	I_B=0.474628
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.777062, 	B=0.398382[0m
+[96m	Cycle:		A=0.214846, 	B=0.309665[0m
+[96m	Identity:	A=0.199119, 	B=0.272821
+[0m
+	Learning rate:		1.66e-04 -> 1.64e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 118 / 200[0m
+	Discriminator loss:	D_A=0.233182, 	D_B=0.178109
+	Generator loss:		G_A=0.386829, 	G_A=0.426768
+	Cycle loss:		C_A=0.858076, 	C_B=0.709575
+	Identity loss:		I_A=0.315927, 	I_B=0.412707
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.912428, 	B=0.462914[0m
+[96m	Cycle:		A=0.288025, 	B=0.361431[0m
+[96m	Identity:	A=0.238351, 	B=0.340443
+[0m
+	Learning rate:		1.64e-04 -> 1.62e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 119 / 200[0m
+	Discriminator loss:	D_A=0.208477, 	D_B=0.192211
+	Generator loss:		G_A=0.340792, 	G_A=0.552737
+	Cycle loss:		C_A=3.109227, 	C_B=0.680609
+	Identity loss:		I_A=0.282659, 	I_B=1.536017
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.764283, 	B=0.417779[0m
+[96m	Cycle:		A=0.223420, 	B=0.338344[0m
+[96m	Identity:	A=0.204988, 	B=0.316077
+[0m
+	Learning rate:		1.62e-04 -> 1.60e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 120 / 200[0m
+	Discriminator loss:	D_A=0.218286, 	D_B=0.155283
+	Generator loss:		G_A=0.385471, 	G_A=0.352281
+	Cycle loss:		C_A=1.023005, 	C_B=0.750524
+	Identity loss:		I_A=0.330431, 	I_B=0.426442
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.788823, 	B=0.476723[0m
+[96m	Cycle:		A=0.299747, 	B=0.355777[0m
+[96m	Identity:	A=0.251491, 	B=0.343485
+[0m
+	Learning rate:		1.60e-04 -> 1.58e-04
+	peak memory use:	20.059G
+[92m	Saving models at the end of epoch 120[0m
+[1m
+Start of epoch 121 / 200[0m
+	Discriminator loss:	D_A=0.274660, 	D_B=0.149870
+	Generator loss:		G_A=0.283263, 	G_A=0.658704
+	Cycle loss:		C_A=0.797078, 	C_B=0.647589
+	Identity loss:		I_A=0.272389, 	I_B=0.310021
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.700408, 	B=0.420243[0m
+[96m	Cycle:		A=0.203240, 	B=0.337014[0m
+[96m	Identity:	A=0.183210, 	B=0.308647
+[0m
+	Learning rate:		1.58e-04 -> 1.56e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 122 / 200[0m
+	Discriminator loss:	D_A=0.235414, 	D_B=0.166205
+	Generator loss:		G_A=0.302744, 	G_A=0.317311
+	Cycle loss:		C_A=1.062883, 	C_B=0.691758
+	Identity loss:		I_A=0.303880, 	I_B=0.388685
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.772375, 	B=0.421021[0m
+[96m	Cycle:		A=0.213490, 	B=0.303016[0m
+[96m	Identity:	A=0.196756, 	B=0.290761
+[0m
+	Learning rate:		1.56e-04 -> 1.54e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 123 / 200[0m
+	Discriminator loss:	D_A=0.234212, 	D_B=0.137695
+	Generator loss:		G_A=0.266055, 	G_A=0.457676
+	Cycle loss:		C_A=0.912099, 	C_B=0.582186
+	Identity loss:		I_A=0.260562, 	I_B=0.432197
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.698173, 	B=0.421335[0m
+[96m	Cycle:		A=0.216905, 	B=0.333737[0m
+[96m	Identity:	A=0.203870, 	B=0.304869
+[0m
+	Learning rate:		1.54e-04 -> 1.52e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 124 / 200[0m
+	Discriminator loss:	D_A=0.274417, 	D_B=0.178268
+	Generator loss:		G_A=0.229205, 	G_A=0.393623
+	Cycle loss:		C_A=0.566238, 	C_B=0.639737
+	Identity loss:		I_A=0.285419, 	I_B=0.261552
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.793050, 	B=0.440691[0m
+[96m	Cycle:		A=0.219896, 	B=0.320218[0m
+[96m	Identity:	A=0.193946, 	B=0.311757
+[0m
+	Learning rate:		1.52e-04 -> 1.50e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 125 / 200[0m
+	Discriminator loss:	D_A=0.230165, 	D_B=0.150923
+	Generator loss:		G_A=0.391882, 	G_A=0.334879
+	Cycle loss:		C_A=0.781218, 	C_B=0.590021
+	Identity loss:		I_A=0.251469, 	I_B=0.428074
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.790209, 	B=0.443289[0m
+[96m	Cycle:		A=0.201215, 	B=0.353582[0m
+[96m	Identity:	A=0.183088, 	B=0.330599
+[0m
+	Learning rate:		1.50e-04 -> 1.49e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 126 / 200[0m
+	Discriminator loss:	D_A=0.247422, 	D_B=0.153058
+	Generator loss:		G_A=0.300761, 	G_A=0.324576
+	Cycle loss:		C_A=0.641970, 	C_B=0.617314
+	Identity loss:		I_A=0.271835, 	I_B=0.353929
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.744559, 	B=0.429842[0m
+[96m	Cycle:		A=0.224491, 	B=0.331029[0m
+[96m	Identity:	A=0.192191, 	B=0.315455
+[0m
+	Learning rate:		1.49e-04 -> 1.47e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 127 / 200[0m
+	Discriminator loss:	D_A=0.190141, 	D_B=0.136703
+	Generator loss:		G_A=0.400493, 	G_A=0.604462
+	Cycle loss:		C_A=0.983962, 	C_B=0.658524
+	Identity loss:		I_A=0.287070, 	I_B=0.431483
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.688369, 	B=0.399921[0m
+[96m	Cycle:		A=0.224257, 	B=0.294178[0m
+[96m	Identity:	A=0.226676, 	B=0.277833
+[0m
+	Learning rate:		1.47e-04 -> 1.45e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 128 / 200[0m
+	Discriminator loss:	D_A=0.254729, 	D_B=0.090834
+	Generator loss:		G_A=0.321474, 	G_A=0.366009
+	Cycle loss:		C_A=0.869757, 	C_B=0.615543
+	Identity loss:		I_A=0.293236, 	I_B=0.384073
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.635240, 	B=0.426209[0m
+[96m	Cycle:		A=0.181201, 	B=0.320587[0m
+[96m	Identity:	A=0.165626, 	B=0.301603
+[0m
+	Learning rate:		1.45e-04 -> 1.43e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 129 / 200[0m
+	Discriminator loss:	D_A=0.205652, 	D_B=0.183824
+	Generator loss:		G_A=0.334453, 	G_A=0.648577
+	Cycle loss:		C_A=0.596444, 	C_B=0.654489
+	Identity loss:		I_A=0.270355, 	I_B=0.239316
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.708525, 	B=0.456358[0m
+[96m	Cycle:		A=0.200232, 	B=0.330576[0m
+[96m	Identity:	A=0.180516, 	B=0.319321
+[0m
+	Learning rate:		1.43e-04 -> 1.41e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 130 / 200[0m
+	Discriminator loss:	D_A=0.194197, 	D_B=0.141111
+	Generator loss:		G_A=0.377570, 	G_A=0.432795
+	Cycle loss:		C_A=0.769218, 	C_B=0.660251
+	Identity loss:		I_A=0.271286, 	I_B=0.384811
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.691991, 	B=0.430865[0m
+[96m	Cycle:		A=0.196392, 	B=0.352833[0m
+[96m	Identity:	A=0.175854, 	B=0.331552
+[0m
+	Learning rate:		1.41e-04 -> 1.39e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 131 / 200[0m
+	Discriminator loss:	D_A=0.185125, 	D_B=0.192209
+	Generator loss:		G_A=0.397745, 	G_A=0.537019
+	Cycle loss:		C_A=0.946994, 	C_B=0.554991
+	Identity loss:		I_A=0.253283, 	I_B=0.378286
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.665792, 	B=0.399403[0m
+[96m	Cycle:		A=0.199048, 	B=0.286608[0m
+[96m	Identity:	A=0.188343, 	B=0.268232
+[0m
+	Learning rate:		1.39e-04 -> 1.37e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 132 / 200[0m
+	Discriminator loss:	D_A=0.207312, 	D_B=0.135431
+	Generator loss:		G_A=0.410980, 	G_A=0.317055
+	Cycle loss:		C_A=0.744785, 	C_B=0.621498
+	Identity loss:		I_A=0.296244, 	I_B=0.339887
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.665980, 	B=0.456556[0m
+[96m	Cycle:		A=0.213518, 	B=0.351302[0m
+[96m	Identity:	A=0.206453, 	B=0.334273
+[0m
+	Learning rate:		1.37e-04 -> 1.35e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 133 / 200[0m
+	Discriminator loss:	D_A=0.254739, 	D_B=0.132112
+	Generator loss:		G_A=0.325066, 	G_A=0.711017
+	Cycle loss:		C_A=1.019081, 	C_B=0.650505
+	Identity loss:		I_A=0.251512, 	I_B=0.445523
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.712035, 	B=0.399579[0m
+[96m	Cycle:		A=0.215437, 	B=0.316391[0m
+[96m	Identity:	A=0.189378, 	B=0.294301
+[0m
+	Learning rate:		1.35e-04 -> 1.33e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 134 / 200[0m
+	Discriminator loss:	D_A=0.213848, 	D_B=0.129600
+	Generator loss:		G_A=0.323576, 	G_A=0.596455
+	Cycle loss:		C_A=2.822783, 	C_B=0.571960
+	Identity loss:		I_A=0.255496, 	I_B=1.351328
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.718000, 	B=0.434667[0m
+[96m	Cycle:		A=0.215391, 	B=0.331536[0m
+[96m	Identity:	A=0.182703, 	B=0.305235
+[0m
+	Learning rate:		1.33e-04 -> 1.31e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 135 / 200[0m
+	Discriminator loss:	D_A=0.192400, 	D_B=0.158868
+	Generator loss:		G_A=0.425956, 	G_A=0.718838
+	Cycle loss:		C_A=0.890806, 	C_B=0.593448
+	Identity loss:		I_A=0.253656, 	I_B=0.432299
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.671858, 	B=0.398418[0m
+[96m	Cycle:		A=0.208446, 	B=0.290188[0m
+[96m	Identity:	A=0.193773, 	B=0.265662
+[0m
+	Learning rate:		1.31e-04 -> 1.29e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 136 / 200[0m
+	Discriminator loss:	D_A=0.213504, 	D_B=0.126478
+	Generator loss:		G_A=0.323693, 	G_A=0.460753
+	Cycle loss:		C_A=0.500643, 	C_B=0.535633
+	Identity loss:		I_A=0.240734, 	I_B=0.245311
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.650429, 	B=0.434535[0m
+[96m	Cycle:		A=0.209419, 	B=0.339670[0m
+[96m	Identity:	A=0.193310, 	B=0.320115
+[0m
+	Learning rate:		1.29e-04 -> 1.27e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 137 / 200[0m
+	Discriminator loss:	D_A=0.228405, 	D_B=0.077770
+	Generator loss:		G_A=0.275109, 	G_A=0.529087
+	Cycle loss:		C_A=0.434744, 	C_B=0.679925
+	Identity loss:		I_A=0.245395, 	I_B=0.198348
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.627109, 	B=0.414175[0m
+[96m	Cycle:		A=0.192033, 	B=0.295668[0m
+[96m	Identity:	A=0.176733, 	B=0.283885
+[0m
+	Learning rate:		1.27e-04 -> 1.25e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 138 / 200[0m
+	Discriminator loss:	D_A=0.195238, 	D_B=0.147100
+	Generator loss:		G_A=0.395028, 	G_A=0.426055
+	Cycle loss:		C_A=0.808465, 	C_B=0.490886
+	Identity loss:		I_A=0.243304, 	I_B=0.381835
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.628901, 	B=0.435963[0m
+[96m	Cycle:		A=0.206343, 	B=0.322813[0m
+[96m	Identity:	A=0.203635, 	B=0.304648
+[0m
+	Learning rate:		1.25e-04 -> 1.23e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 139 / 200[0m
+	Discriminator loss:	D_A=0.176755, 	D_B=0.162343
+	Generator loss:		G_A=0.486779, 	G_A=0.549797
+	Cycle loss:		C_A=0.851005, 	C_B=0.526641
+	Identity loss:		I_A=0.234086, 	I_B=0.356537
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.621566, 	B=0.393772[0m
+[96m	Cycle:		A=0.190951, 	B=0.293574[0m
+[96m	Identity:	A=0.181471, 	B=0.274773
+[0m
+	Learning rate:		1.23e-04 -> 1.21e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 140 / 200[0m
+	Discriminator loss:	D_A=0.172522, 	D_B=0.143587
+	Generator loss:		G_A=0.358774, 	G_A=0.549991
+	Cycle loss:		C_A=0.827754, 	C_B=0.600159
+	Identity loss:		I_A=0.277521, 	I_B=0.402628
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.553426, 	B=0.443996[0m
+[96m	Cycle:		A=0.204818, 	B=0.327241[0m
+[96m	Identity:	A=0.206042, 	B=0.311942
+[0m
+	Learning rate:		1.21e-04 -> 1.19e-04
+	peak memory use:	20.059G
+[92m	Saving models at the end of epoch 140[0m
+[1m
+Start of epoch 141 / 200[0m
+	Discriminator loss:	D_A=0.207982, 	D_B=0.174134
+	Generator loss:		G_A=0.421815, 	G_A=0.349490
+	Cycle loss:		C_A=0.723279, 	C_B=0.596955
+	Identity loss:		I_A=0.244981, 	I_B=0.331022
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.596030, 	B=0.413642[0m
+[96m	Cycle:		A=0.192540, 	B=0.312111[0m
+[96m	Identity:	A=0.184843, 	B=0.286800
+[0m
+	Learning rate:		1.19e-04 -> 1.17e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 142 / 200[0m
+	Discriminator loss:	D_A=0.156474, 	D_B=0.142001
+	Generator loss:		G_A=0.462587, 	G_A=0.719842
+	Cycle loss:		C_A=0.645623, 	C_B=0.590937
+	Identity loss:		I_A=0.266024, 	I_B=0.314848
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.572469, 	B=0.407996[0m
+[96m	Cycle:		A=0.174136, 	B=0.312455[0m
+[96m	Identity:	A=0.175167, 	B=0.297847
+[0m
+	Learning rate:		1.17e-04 -> 1.15e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 143 / 200[0m
+	Discriminator loss:	D_A=0.213173, 	D_B=0.184648
+	Generator loss:		G_A=0.316253, 	G_A=0.415728
+	Cycle loss:		C_A=1.643899, 	C_B=0.502627
+	Identity loss:		I_A=0.220842, 	I_B=0.765055
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.577834, 	B=0.402360[0m
+[96m	Cycle:		A=0.176044, 	B=0.278449[0m
+[96m	Identity:	A=0.165624, 	B=0.265818
+[0m
+	Learning rate:		1.15e-04 -> 1.13e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 144 / 200[0m
+	Discriminator loss:	D_A=0.176624, 	D_B=0.164371
+	Generator loss:		G_A=0.354247, 	G_A=0.500390
+	Cycle loss:		C_A=11.600714, 	C_B=0.536923
+	Identity loss:		I_A=0.230139, 	I_B=5.748405
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.634516, 	B=0.444436[0m
+[96m	Cycle:		A=0.187353, 	B=0.345369[0m
+[96m	Identity:	A=0.176346, 	B=0.320918
+[0m
+	Learning rate:		1.13e-04 -> 1.11e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 145 / 200[0m
+	Discriminator loss:	D_A=0.179093, 	D_B=0.156485
+	Generator loss:		G_A=0.344353, 	G_A=0.531534
+	Cycle loss:		C_A=0.614767, 	C_B=0.484172
+	Identity loss:		I_A=0.224879, 	I_B=0.275510
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.557166, 	B=0.372417[0m
+[96m	Cycle:		A=0.202034, 	B=0.269207[0m
+[96m	Identity:	A=0.189606, 	B=0.257634
+[0m
+	Learning rate:		1.11e-04 -> 1.09e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 146 / 200[0m
+	Discriminator loss:	D_A=0.166598, 	D_B=0.135354
+	Generator loss:		G_A=0.261445, 	G_A=0.560537
+	Cycle loss:		C_A=0.458210, 	C_B=0.509301
+	Identity loss:		I_A=0.234527, 	I_B=0.212245
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.534127, 	B=0.435009[0m
+[96m	Cycle:		A=0.178358, 	B=0.318480[0m
+[96m	Identity:	A=0.176258, 	B=0.312575
+[0m
+	Learning rate:		1.09e-04 -> 1.07e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 147 / 200[0m
+	Discriminator loss:	D_A=0.189265, 	D_B=0.090288
+	Generator loss:		G_A=0.392059, 	G_A=0.538966
+	Cycle loss:		C_A=0.471471, 	C_B=0.477668
+	Identity loss:		I_A=0.204659, 	I_B=0.210637
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.557955, 	B=0.411681[0m
+[96m	Cycle:		A=0.184775, 	B=0.297314[0m
+[96m	Identity:	A=0.179025, 	B=0.288277
+[0m
+	Learning rate:		1.07e-04 -> 1.05e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 148 / 200[0m
+	Discriminator loss:	D_A=0.206576, 	D_B=0.171815
+	Generator loss:		G_A=0.304526, 	G_A=0.462700
+	Cycle loss:		C_A=0.494173, 	C_B=0.521127
+	Identity loss:		I_A=0.243808, 	I_B=0.273955
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.512666, 	B=0.430707[0m
+[96m	Cycle:		A=0.168947, 	B=0.316668[0m
+[96m	Identity:	A=0.165700, 	B=0.308318
+[0m
+	Learning rate:		1.05e-04 -> 1.03e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 149 / 200[0m
+	Discriminator loss:	D_A=0.158346, 	D_B=0.197727
+	Generator loss:		G_A=0.531741, 	G_A=0.365175
+	Cycle loss:		C_A=2.328886, 	C_B=0.508988
+	Identity loss:		I_A=0.220150, 	I_B=1.186325
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.582178, 	B=0.377850[0m
+[96m	Cycle:		A=0.191804, 	B=0.261672[0m
+[96m	Identity:	A=0.180097, 	B=0.262226
+[0m
+	Learning rate:		1.03e-04 -> 1.01e-04
+	peak memory use:	20.059G
+[1m
+Start of epoch 150 / 200[0m
+	Discriminator loss:	D_A=0.180962, 	D_B=0.153327
+	Generator loss:		G_A=0.430852, 	G_A=0.441483
+	Cycle loss:		C_A=1.073841, 	C_B=0.479572
+	Identity loss:		I_A=0.226518, 	I_B=0.454808
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.570358, 	B=0.417780[0m
+[96m	Cycle:		A=0.194258, 	B=0.311283[0m
+[96m	Identity:	A=0.183913, 	B=0.291302
+[0m
+	Learning rate:		1.01e-04 -> 9.90e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 151 / 200[0m
+	Discriminator loss:	D_A=0.155589, 	D_B=0.182270
+	Generator loss:		G_A=0.349578, 	G_A=0.707757
+	Cycle loss:		C_A=0.674423, 	C_B=0.504860
+	Identity loss:		I_A=0.229751, 	I_B=0.314243
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.514790, 	B=0.407378[0m
+[96m	Cycle:		A=0.185651, 	B=0.302826[0m
+[96m	Identity:	A=0.169323, 	B=0.295570
+[0m
+	Learning rate:		9.90e-05 -> 9.70e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 152 / 200[0m
+	Discriminator loss:	D_A=0.175730, 	D_B=0.161353
+	Generator loss:		G_A=0.520538, 	G_A=0.440872
+	Cycle loss:		C_A=0.782153, 	C_B=0.500607
+	Identity loss:		I_A=0.222408, 	I_B=0.302778
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.610270, 	B=0.400499[0m
+[96m	Cycle:		A=0.206245, 	B=0.291719[0m
+[96m	Identity:	A=0.199773, 	B=0.274489
+[0m
+	Learning rate:		9.70e-05 -> 9.50e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 153 / 200[0m
+	Discriminator loss:	D_A=0.190232, 	D_B=0.126042
+	Generator loss:		G_A=0.465880, 	G_A=0.411272
+	Cycle loss:		C_A=0.582312, 	C_B=0.456299
+	Identity loss:		I_A=0.216210, 	I_B=0.255450
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.541214, 	B=0.413895[0m
+[96m	Cycle:		A=0.188984, 	B=0.296622[0m
+[96m	Identity:	A=0.184151, 	B=0.284104
+[0m
+	Learning rate:		9.50e-05 -> 9.31e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 154 / 200[0m
+	Discriminator loss:	D_A=0.179714, 	D_B=0.107150
+	Generator loss:		G_A=0.411124, 	G_A=0.476627
+	Cycle loss:		C_A=0.713994, 	C_B=0.480645
+	Identity loss:		I_A=0.216721, 	I_B=0.314968
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.596171, 	B=0.413401[0m
+[96m	Cycle:		A=0.204503, 	B=0.317552[0m
+[96m	Identity:	A=0.193202, 	B=0.301380
+[0m
+	Learning rate:		9.31e-05 -> 9.11e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 155 / 200[0m
+	Discriminator loss:	D_A=0.155716, 	D_B=0.097367
+	Generator loss:		G_A=0.554411, 	G_A=0.406697
+	Cycle loss:		C_A=0.540959, 	C_B=0.475761
+	Identity loss:		I_A=0.217706, 	I_B=0.255856
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.545328, 	B=0.411195[0m
+[96m	Cycle:		A=0.197853, 	B=0.309438[0m
+[96m	Identity:	A=0.176472, 	B=0.292099
+[0m
+	Learning rate:		9.11e-05 -> 8.91e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 156 / 200[0m
+	Discriminator loss:	D_A=0.142180, 	D_B=0.113422
+	Generator loss:		G_A=0.412339, 	G_A=0.615431
+	Cycle loss:		C_A=0.677933, 	C_B=0.469358
+	Identity loss:		I_A=0.221054, 	I_B=0.293661
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.517184, 	B=0.435838[0m
+[96m	Cycle:		A=0.195490, 	B=0.313578[0m
+[96m	Identity:	A=0.197121, 	B=0.300717
+[0m
+	Learning rate:		8.91e-05 -> 8.71e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 157 / 200[0m
+	Discriminator loss:	D_A=0.119582, 	D_B=0.118604
+	Generator loss:		G_A=0.612401, 	G_A=0.588299
+	Cycle loss:		C_A=1.176235, 	C_B=0.450118
+	Identity loss:		I_A=0.200210, 	I_B=0.513517
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.475745, 	B=0.420278[0m
+[96m	Cycle:		A=0.185903, 	B=0.307047[0m
+[96m	Identity:	A=0.187504, 	B=0.294585
+[0m
+	Learning rate:		8.71e-05 -> 8.51e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 158 / 200[0m
+	Discriminator loss:	D_A=0.137503, 	D_B=0.158244
+	Generator loss:		G_A=0.507376, 	G_A=0.603635
+	Cycle loss:		C_A=0.562846, 	C_B=0.490559
+	Identity loss:		I_A=0.207699, 	I_B=0.296025
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.519790, 	B=0.397875[0m
+[96m	Cycle:		A=0.192142, 	B=0.282847[0m
+[96m	Identity:	A=0.184670, 	B=0.267459
+[0m
+	Learning rate:		8.51e-05 -> 8.32e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 159 / 200[0m
+	Discriminator loss:	D_A=0.143062, 	D_B=0.110994
+	Generator loss:		G_A=0.284974, 	G_A=0.501012
+	Cycle loss:		C_A=0.461288, 	C_B=0.456454
+	Identity loss:		I_A=0.217104, 	I_B=0.208453
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.522458, 	B=0.410687[0m
+[96m	Cycle:		A=0.193542, 	B=0.307497[0m
+[96m	Identity:	A=0.183559, 	B=0.284423
+[0m
+	Learning rate:		8.32e-05 -> 8.12e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 160 / 200[0m
+	Discriminator loss:	D_A=0.179863, 	D_B=0.111445
+	Generator loss:		G_A=0.414492, 	G_A=0.550119
+	Cycle loss:		C_A=0.548068, 	C_B=0.451748
+	Identity loss:		I_A=0.193065, 	I_B=0.262698
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.463241, 	B=0.423875[0m
+[96m	Cycle:		A=0.178241, 	B=0.307340[0m
+[96m	Identity:	A=0.176086, 	B=0.294861
+[0m
+	Learning rate:		8.12e-05 -> 7.92e-05
+	peak memory use:	20.059G
+[92m	Saving models at the end of epoch 160[0m
+[1m
+Start of epoch 161 / 200[0m
+	Discriminator loss:	D_A=0.176468, 	D_B=0.213879
+	Generator loss:		G_A=0.325760, 	G_A=0.608504
+	Cycle loss:		C_A=1.138025, 	C_B=0.401104
+	Identity loss:		I_A=0.189689, 	I_B=0.542686
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.511440, 	B=0.414106[0m
+[96m	Cycle:		A=0.187241, 	B=0.296854[0m
+[96m	Identity:	A=0.181495, 	B=0.290846
+[0m
+	Learning rate:		7.92e-05 -> 7.72e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 162 / 200[0m
+	Discriminator loss:	D_A=0.119320, 	D_B=0.081234
+	Generator loss:		G_A=0.582119, 	G_A=0.543958
+	Cycle loss:		C_A=0.679126, 	C_B=0.396231
+	Identity loss:		I_A=0.176685, 	I_B=0.304091
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.521511, 	B=0.408347[0m
+[96m	Cycle:		A=0.199253, 	B=0.286760[0m
+[96m	Identity:	A=0.186170, 	B=0.277294
+[0m
+	Learning rate:		7.72e-05 -> 7.52e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 163 / 200[0m
+	Discriminator loss:	D_A=0.167856, 	D_B=0.109103
+	Generator loss:		G_A=0.320823, 	G_A=0.566674
+	Cycle loss:		C_A=0.441762, 	C_B=0.436851
+	Identity loss:		I_A=0.210088, 	I_B=0.207091
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.488390, 	B=0.429529[0m
+[96m	Cycle:		A=0.183635, 	B=0.321695[0m
+[96m	Identity:	A=0.179673, 	B=0.307051
+[0m
+	Learning rate:		7.52e-05 -> 7.33e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 164 / 200[0m
+	Discriminator loss:	D_A=0.115017, 	D_B=0.122395
+	Generator loss:		G_A=0.408624, 	G_A=0.443267
+	Cycle loss:		C_A=0.494125, 	C_B=0.447516
+	Identity loss:		I_A=0.202377, 	I_B=0.244617
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.458156, 	B=0.413922[0m
+[96m	Cycle:		A=0.188928, 	B=0.296609[0m
+[96m	Identity:	A=0.174798, 	B=0.276474
+[0m
+	Learning rate:		7.33e-05 -> 7.13e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 165 / 200[0m
+	Discriminator loss:	D_A=0.168399, 	D_B=0.168328
+	Generator loss:		G_A=0.376454, 	G_A=0.618196
+	Cycle loss:		C_A=1.843309, 	C_B=0.418339
+	Identity loss:		I_A=0.192262, 	I_B=0.893766
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.525742, 	B=0.431856[0m
+[96m	Cycle:		A=0.201679, 	B=0.317842[0m
+[96m	Identity:	A=0.184185, 	B=0.301086
+[0m
+	Learning rate:		7.13e-05 -> 6.93e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 166 / 200[0m
+	Discriminator loss:	D_A=0.118787, 	D_B=0.109898
+	Generator loss:		G_A=0.476286, 	G_A=0.591891
+	Cycle loss:		C_A=0.420765, 	C_B=0.399115
+	Identity loss:		I_A=0.184014, 	I_B=0.190539
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.448064, 	B=0.408921[0m
+[96m	Cycle:		A=0.183206, 	B=0.283345[0m
+[96m	Identity:	A=0.170423, 	B=0.273657
+[0m
+	Learning rate:		6.93e-05 -> 6.73e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 167 / 200[0m
+	Discriminator loss:	D_A=0.159887, 	D_B=0.176336
+	Generator loss:		G_A=0.356971, 	G_A=0.760246
+	Cycle loss:		C_A=2.822003, 	C_B=0.418148
+	Identity loss:		I_A=0.189360, 	I_B=1.334404
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.489117, 	B=0.414531[0m
+[96m	Cycle:		A=0.177531, 	B=0.303019[0m
+[96m	Identity:	A=0.171500, 	B=0.289477
+[0m
+	Learning rate:		6.73e-05 -> 6.53e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 168 / 200[0m
+	Discriminator loss:	D_A=0.152072, 	D_B=0.151651
+	Generator loss:		G_A=0.386793, 	G_A=0.601669
+	Cycle loss:		C_A=0.481604, 	C_B=0.403915
+	Identity loss:		I_A=0.182495, 	I_B=0.238960
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.463200, 	B=0.410598[0m
+[96m	Cycle:		A=0.194701, 	B=0.292814[0m
+[96m	Identity:	A=0.179803, 	B=0.274517
+[0m
+	Learning rate:		6.53e-05 -> 6.34e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 169 / 200[0m
+	Discriminator loss:	D_A=0.112670, 	D_B=0.116655
+	Generator loss:		G_A=0.493258, 	G_A=0.576822
+	Cycle loss:		C_A=0.845892, 	C_B=0.410698
+	Identity loss:		I_A=0.190911, 	I_B=0.357886
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.474618, 	B=0.421198[0m
+[96m	Cycle:		A=0.214172, 	B=0.305479[0m
+[96m	Identity:	A=0.192721, 	B=0.289723
+[0m
+	Learning rate:		6.34e-05 -> 6.14e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 170 / 200[0m
+	Discriminator loss:	D_A=0.086154, 	D_B=0.109183
+	Generator loss:		G_A=0.602865, 	G_A=0.539114
+	Cycle loss:		C_A=0.595401, 	C_B=0.391762
+	Identity loss:		I_A=0.180237, 	I_B=0.279920
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.454766, 	B=0.426583[0m
+[96m	Cycle:		A=0.198512, 	B=0.308247[0m
+[96m	Identity:	A=0.180494, 	B=0.291480
+[0m
+	Learning rate:		6.14e-05 -> 5.94e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 171 / 200[0m
+	Discriminator loss:	D_A=0.113711, 	D_B=0.150439
+	Generator loss:		G_A=0.366657, 	G_A=0.611749
+	Cycle loss:		C_A=0.949863, 	C_B=0.439776
+	Identity loss:		I_A=0.204088, 	I_B=0.487475
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.435463, 	B=0.413746[0m
+[96m	Cycle:		A=0.201170, 	B=0.293817[0m
+[96m	Identity:	A=0.188343, 	B=0.284125
+[0m
+	Learning rate:		5.94e-05 -> 5.74e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 172 / 200[0m
+	Discriminator loss:	D_A=0.152215, 	D_B=0.217367
+	Generator loss:		G_A=0.255053, 	G_A=0.803645
+	Cycle loss:		C_A=0.370691, 	C_B=0.393866
+	Identity loss:		I_A=0.187818, 	I_B=0.185429
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.445179, 	B=0.433144[0m
+[96m	Cycle:		A=0.193751, 	B=0.305990[0m
+[96m	Identity:	A=0.184010, 	B=0.290633
+[0m
+	Learning rate:		5.74e-05 -> 5.54e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 173 / 200[0m
+	Discriminator loss:	D_A=0.108394, 	D_B=0.092936
+	Generator loss:		G_A=0.432336, 	G_A=0.674375
+	Cycle loss:		C_A=0.455706, 	C_B=0.387676
+	Identity loss:		I_A=0.182004, 	I_B=0.234923
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.436660, 	B=0.423772[0m
+[96m	Cycle:		A=0.185863, 	B=0.309638[0m
+[96m	Identity:	A=0.175727, 	B=0.294012
+[0m
+	Learning rate:		5.54e-05 -> 5.35e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 174 / 200[0m
+	Discriminator loss:	D_A=0.133082, 	D_B=0.074904
+	Generator loss:		G_A=0.484616, 	G_A=0.667841
+	Cycle loss:		C_A=0.399160, 	C_B=0.377626
+	Identity loss:		I_A=0.173146, 	I_B=0.186985
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.415761, 	B=0.413304[0m
+[96m	Cycle:		A=0.184932, 	B=0.285958[0m
+[96m	Identity:	A=0.176998, 	B=0.271915
+[0m
+	Learning rate:		5.35e-05 -> 5.15e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 175 / 200[0m
+	Discriminator loss:	D_A=0.160360, 	D_B=0.147894
+	Generator loss:		G_A=0.439538, 	G_A=0.607410
+	Cycle loss:		C_A=0.569208, 	C_B=0.375901
+	Identity loss:		I_A=0.172805, 	I_B=0.263521
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.411403, 	B=0.420877[0m
+[96m	Cycle:		A=0.190822, 	B=0.300739[0m
+[96m	Identity:	A=0.184682, 	B=0.281808
+[0m
+	Learning rate:		5.15e-05 -> 4.95e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 176 / 200[0m
+	Discriminator loss:	D_A=0.108104, 	D_B=0.133137
+	Generator loss:		G_A=0.528834, 	G_A=0.584299
+	Cycle loss:		C_A=0.398522, 	C_B=0.370670
+	Identity loss:		I_A=0.181888, 	I_B=0.162497
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.415378, 	B=0.423927[0m
+[96m	Cycle:		A=0.187474, 	B=0.300540[0m
+[96m	Identity:	A=0.178215, 	B=0.282523
+[0m
+	Learning rate:		4.95e-05 -> 4.75e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 177 / 200[0m
+	Discriminator loss:	D_A=0.138641, 	D_B=0.133905
+	Generator loss:		G_A=0.438829, 	G_A=0.596973
+	Cycle loss:		C_A=0.522550, 	C_B=0.375864
+	Identity loss:		I_A=0.171244, 	I_B=0.221215
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.408026, 	B=0.406100[0m
+[96m	Cycle:		A=0.182145, 	B=0.291955[0m
+[96m	Identity:	A=0.173675, 	B=0.271794
+[0m
+	Learning rate:		4.75e-05 -> 4.55e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 178 / 200[0m
+	Discriminator loss:	D_A=0.119551, 	D_B=0.115436
+	Generator loss:		G_A=0.471142, 	G_A=0.630706
+	Cycle loss:		C_A=0.544697, 	C_B=0.347191
+	Identity loss:		I_A=0.167797, 	I_B=0.199404
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.395272, 	B=0.417714[0m
+[96m	Cycle:		A=0.180221, 	B=0.295858[0m
+[96m	Identity:	A=0.171981, 	B=0.276477
+[0m
+	Learning rate:		4.55e-05 -> 4.36e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 179 / 200[0m
+	Discriminator loss:	D_A=0.138496, 	D_B=0.101524
+	Generator loss:		G_A=0.299269, 	G_A=0.509363
+	Cycle loss:		C_A=0.347261, 	C_B=0.365038
+	Identity loss:		I_A=0.173115, 	I_B=0.146691
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.402129, 	B=0.419818[0m
+[96m	Cycle:		A=0.183627, 	B=0.296524[0m
+[96m	Identity:	A=0.176128, 	B=0.276728
+[0m
+	Learning rate:		4.36e-05 -> 4.16e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 180 / 200[0m
+	Discriminator loss:	D_A=0.094652, 	D_B=0.093473
+	Generator loss:		G_A=0.561911, 	G_A=0.631013
+	Cycle loss:		C_A=0.420424, 	C_B=0.358665
+	Identity loss:		I_A=0.179898, 	I_B=0.237380
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.406570, 	B=0.421140[0m
+[96m	Cycle:		A=0.183294, 	B=0.300695[0m
+[96m	Identity:	A=0.183501, 	B=0.283017
+[0m
+	Learning rate:		4.16e-05 -> 3.96e-05
+	peak memory use:	20.059G
+[92m	Saving models at the end of epoch 180[0m
+[1m
+Start of epoch 181 / 200[0m
+	Discriminator loss:	D_A=0.122245, 	D_B=0.192844
+	Generator loss:		G_A=0.342359, 	G_A=0.735110
+	Cycle loss:		C_A=0.340614, 	C_B=0.357376
+	Identity loss:		I_A=0.164741, 	I_B=0.173235
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.415310, 	B=0.411273[0m
+[96m	Cycle:		A=0.190292, 	B=0.289279[0m
+[96m	Identity:	A=0.179391, 	B=0.269113
+[0m
+	Learning rate:		3.96e-05 -> 3.76e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 182 / 200[0m
+	Discriminator loss:	D_A=0.097346, 	D_B=0.090676
+	Generator loss:		G_A=0.502575, 	G_A=0.574219
+	Cycle loss:		C_A=0.312459, 	C_B=0.336610
+	Identity loss:		I_A=0.166345, 	I_B=0.157094
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.406386, 	B=0.431621[0m
+[96m	Cycle:		A=0.187507, 	B=0.313214[0m
+[96m	Identity:	A=0.180776, 	B=0.290590
+[0m
+	Learning rate:		3.76e-05 -> 3.56e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 183 / 200[0m
+	Discriminator loss:	D_A=0.160203, 	D_B=0.192710
+	Generator loss:		G_A=0.410034, 	G_A=0.652320
+	Cycle loss:		C_A=7.879377, 	C_B=0.339268
+	Identity loss:		I_A=0.166331, 	I_B=3.951547
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.432305, 	B=0.415057[0m
+[96m	Cycle:		A=0.198384, 	B=0.295610[0m
+[96m	Identity:	A=0.182530, 	B=0.273721
+[0m
+	Learning rate:		3.56e-05 -> 3.37e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 184 / 200[0m
+	Discriminator loss:	D_A=0.097384, 	D_B=0.109589
+	Generator loss:		G_A=0.581450, 	G_A=0.616780
+	Cycle loss:		C_A=0.419096, 	C_B=0.324915
+	Identity loss:		I_A=0.159928, 	I_B=0.177349
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.406152, 	B=0.426482[0m
+[96m	Cycle:		A=0.184032, 	B=0.309040[0m
+[96m	Identity:	A=0.177941, 	B=0.284489
+[0m
+	Learning rate:		3.37e-05 -> 3.17e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 185 / 200[0m
+	Discriminator loss:	D_A=0.091287, 	D_B=0.105522
+	Generator loss:		G_A=0.681038, 	G_A=0.673058
+	Cycle loss:		C_A=0.578827, 	C_B=0.328249
+	Identity loss:		I_A=0.165232, 	I_B=0.272198
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.408132, 	B=0.417983[0m
+[96m	Cycle:		A=0.183965, 	B=0.299236[0m
+[96m	Identity:	A=0.175216, 	B=0.277116
+[0m
+	Learning rate:		3.17e-05 -> 2.97e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 186 / 200[0m
+	Discriminator loss:	D_A=0.081889, 	D_B=0.062675
+	Generator loss:		G_A=0.660686, 	G_A=0.717416
+	Cycle loss:		C_A=0.525879, 	C_B=0.319878
+	Identity loss:		I_A=0.160438, 	I_B=0.229682
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.393178, 	B=0.425902[0m
+[96m	Cycle:		A=0.178706, 	B=0.300855[0m
+[96m	Identity:	A=0.176794, 	B=0.280785
+[0m
+	Learning rate:		2.97e-05 -> 2.77e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 187 / 200[0m
+	Discriminator loss:	D_A=0.112799, 	D_B=0.109817
+	Generator loss:		G_A=0.560443, 	G_A=0.648215
+	Cycle loss:		C_A=0.399466, 	C_B=0.323913
+	Identity loss:		I_A=0.158792, 	I_B=0.207614
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.398765, 	B=0.422750[0m
+[96m	Cycle:		A=0.185331, 	B=0.305675[0m
+[96m	Identity:	A=0.177407, 	B=0.284132
+[0m
+	Learning rate:		2.77e-05 -> 2.57e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 188 / 200[0m
+	Discriminator loss:	D_A=0.094037, 	D_B=0.119503
+	Generator loss:		G_A=0.512136, 	G_A=0.726009
+	Cycle loss:		C_A=0.413396, 	C_B=0.309722
+	Identity loss:		I_A=0.156416, 	I_B=0.200314
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.400840, 	B=0.419631[0m
+[96m	Cycle:		A=0.197408, 	B=0.299514[0m
+[96m	Identity:	A=0.180212, 	B=0.278431
+[0m
+	Learning rate:		2.57e-05 -> 2.38e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 189 / 200[0m
+	Discriminator loss:	D_A=0.087702, 	D_B=0.109011
+	Generator loss:		G_A=0.633645, 	G_A=0.710190
+	Cycle loss:		C_A=0.350646, 	C_B=0.307793
+	Identity loss:		I_A=0.156634, 	I_B=0.159438
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.391212, 	B=0.425755[0m
+[96m	Cycle:		A=0.185080, 	B=0.302060[0m
+[96m	Identity:	A=0.178064, 	B=0.282807
+[0m
+	Learning rate:		2.38e-05 -> 2.18e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 190 / 200[0m
+	Discriminator loss:	D_A=0.121665, 	D_B=0.104004
+	Generator loss:		G_A=0.452575, 	G_A=0.707843
+	Cycle loss:		C_A=0.442966, 	C_B=0.311912
+	Identity loss:		I_A=0.157378, 	I_B=0.202221
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.390650, 	B=0.420400[0m
+[96m	Cycle:		A=0.185229, 	B=0.300734[0m
+[96m	Identity:	A=0.179096, 	B=0.278307
+[0m
+	Learning rate:		2.18e-05 -> 1.98e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 191 / 200[0m
+	Discriminator loss:	D_A=0.112553, 	D_B=0.149669
+	Generator loss:		G_A=0.387052, 	G_A=0.655563
+	Cycle loss:		C_A=1.695444, 	C_B=0.305066
+	Identity loss:		I_A=0.157624, 	I_B=0.892308
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.394773, 	B=0.419795[0m
+[96m	Cycle:		A=0.184161, 	B=0.297969[0m
+[96m	Identity:	A=0.174777, 	B=0.277604
+[0m
+	Learning rate:		1.98e-05 -> 1.78e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 192 / 200[0m
+	Discriminator loss:	D_A=0.117749, 	D_B=0.154187
+	Generator loss:		G_A=0.497290, 	G_A=0.646104
+	Cycle loss:		C_A=0.543524, 	C_B=0.302891
+	Identity loss:		I_A=0.155421, 	I_B=0.261621
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.392745, 	B=0.422898[0m
+[96m	Cycle:		A=0.186311, 	B=0.302467[0m
+[96m	Identity:	A=0.177450, 	B=0.280886
+[0m
+	Learning rate:		1.78e-05 -> 1.58e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 193 / 200[0m
+	Discriminator loss:	D_A=0.089823, 	D_B=0.139435
+	Generator loss:		G_A=0.614137, 	G_A=0.648601
+	Cycle loss:		C_A=0.474962, 	C_B=0.302615
+	Identity loss:		I_A=0.154952, 	I_B=0.240330
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.393558, 	B=0.419593[0m
+[96m	Cycle:		A=0.187069, 	B=0.299130[0m
+[96m	Identity:	A=0.177624, 	B=0.278063
+[0m
+	Learning rate:		1.58e-05 -> 1.39e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 194 / 200[0m
+	Discriminator loss:	D_A=0.098461, 	D_B=0.126513
+	Generator loss:		G_A=0.570644, 	G_A=0.641364
+	Cycle loss:		C_A=0.322600, 	C_B=0.299067
+	Identity loss:		I_A=0.154185, 	I_B=0.166573
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.390778, 	B=0.422575[0m
+[96m	Cycle:		A=0.187099, 	B=0.302002[0m
+[96m	Identity:	A=0.177282, 	B=0.280312
+[0m
+	Learning rate:		1.39e-05 -> 1.19e-05
+	peak memory use:	20.059G
+[1m
+Start of epoch 195 / 200[0m
+	Discriminator loss:	D_A=0.101441, 	D_B=0.095257
+	Generator loss:		G_A=0.501751, 	G_A=0.656968
+	Cycle loss:		C_A=0.476441, 	C_B=0.298289
+	Identity loss:		I_A=0.154037, 	I_B=0.226869
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.390511, 	B=0.421733[0m
+[96m	Cycle:		A=0.188328, 	B=0.300658[0m
+[96m	Identity:	A=0.177081, 	B=0.279291
+[0m
+	Learning rate:		1.19e-05 -> 9.90e-06
+	peak memory use:	20.059G
+[1m
+Start of epoch 196 / 200[0m
+	Discriminator loss:	D_A=0.120051, 	D_B=0.142474
+	Generator loss:		G_A=0.514213, 	G_A=0.664268
+	Cycle loss:		C_A=0.442014, 	C_B=0.298423
+	Identity loss:		I_A=0.154179, 	I_B=0.223757
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.389907, 	B=0.421231[0m
+[96m	Cycle:		A=0.185855, 	B=0.300736[0m
+[96m	Identity:	A=0.177252, 	B=0.278980
+[0m
+	Learning rate:		9.90e-06 -> 7.92e-06
+	peak memory use:	20.059G
+[1m
+Start of epoch 197 / 200[0m
+	Discriminator loss:	D_A=0.086956, 	D_B=0.099464
+	Generator loss:		G_A=0.484885, 	G_A=0.670308
+	Cycle loss:		C_A=0.885638, 	C_B=0.296902
+	Identity loss:		I_A=0.153467, 	I_B=0.441237
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.389546, 	B=0.423451[0m
+[96m	Cycle:		A=0.186310, 	B=0.302121[0m
+[96m	Identity:	A=0.177243, 	B=0.280162
+[0m
+	Learning rate:		7.92e-06 -> 5.94e-06
+	peak memory use:	20.059G
+[1m
+Start of epoch 198 / 200[0m
+	Discriminator loss:	D_A=0.089092, 	D_B=0.111711
+	Generator loss:		G_A=0.581061, 	G_A=0.666699
+	Cycle loss:		C_A=0.340208, 	C_B=0.296275
+	Identity loss:		I_A=0.153083, 	I_B=0.162294
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.390319, 	B=0.423617[0m
+[96m	Cycle:		A=0.186768, 	B=0.302168[0m
+[96m	Identity:	A=0.177171, 	B=0.280012
+[0m
+	Learning rate:		5.94e-06 -> 3.96e-06
+	peak memory use:	20.059G
+[1m
+Start of epoch 199 / 200[0m
+	Discriminator loss:	D_A=0.090582, 	D_B=0.089515
+	Generator loss:		G_A=0.524862, 	G_A=0.659068
+	Cycle loss:		C_A=0.280427, 	C_B=0.295488
+	Identity loss:		I_A=0.152966, 	I_B=0.118435
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.389194, 	B=0.423566[0m
+[96m	Cycle:		A=0.186058, 	B=0.301962[0m
+[96m	Identity:	A=0.177361, 	B=0.279879
+[0m
+	Learning rate:		3.96e-06 -> 1.98e-06
+	peak memory use:	20.059G
+[1m
+Start of epoch 200 / 200[0m
+	Discriminator loss:	D_A=0.074379, 	D_B=0.142509
+	Generator loss:		G_A=0.465887, 	G_A=0.665197
+	Cycle loss:		C_A=0.417398, 	C_B=0.294737
+	Identity loss:		I_A=0.152860, 	I_B=0.219868
+	Time Taken:		29 sec
+[96m
+	Validation losses:[0m
+[96m	Difference:	0.304102[0m
+[96m	Translation:	A=0.389919, 	B=0.423886[0m
+[96m	Cycle:		A=0.186447, 	B=0.302395[0m
+[96m	Identity:	A=0.177364, 	B=0.280236
+[0m
+	Learning rate:		1.98e-06 -> 0.00e+00
+	peak memory use:	20.059G
+[92m	Saving models at the end of epoch 200[0m

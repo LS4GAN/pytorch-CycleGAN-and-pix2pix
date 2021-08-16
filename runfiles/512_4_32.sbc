@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --partition=volta
+#SBATCH --account mlg-core
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --gres=gpu:1
+#SBATCH --time=13:00:00
+#SBATCH --job-name=512_4_32
+#SBATCH --output=/sdcc/u/yhuang2/PROJs/GAN/pytorch-CycleGAN-and-pix2pix//runfiles/512_4_32.out
+#SBATCH --error=/sdcc/u/yhuang2/PROJs/GAN/pytorch-CycleGAN-and-pix2pix//runfiles/512_4_32.err
+srun --unbuffered python /sdcc/u/yhuang2/PROJs/GAN/pytorch-CycleGAN-and-pix2pix//train_toyzero.py /sdcc/u/yhuang2/PROJs/GAN/pytorch-CycleGAN-and-pix2pix//configs/config_toyzero_512x512_4_32.yaml
