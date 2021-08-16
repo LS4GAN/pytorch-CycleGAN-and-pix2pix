@@ -1,3 +1,12 @@
+# For Dmitrii
+I added four things;
+1. The dataset apparatus for toyzero are implemented in the folder `data`;
+2. For interactive training with toyzero dataset, use `train_toyzero.ipynb`;
+3. For launch-ready script for training with toyzero dataset, `use train_toyzero.py`;
+4. I added `configs` to make the options more customized for toyzero;
+I changed one thing:
+1. Toutput of the generators (see `models/networks.py`). If the `dataset_mode` (see `configs/config_base.yaml`) is set to be `toyzero`, the generators know to use a linear output without activation.
+
 
 <img src='imgs/horse2zebra.gif' align="right" width=384>
 
